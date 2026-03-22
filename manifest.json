@@ -1,0 +1,57 @@
+{
+  "name": "Códigos Postales del Mundo",
+  "short_name": "CP del Mundo",
+  "description": "Encuentra cualquier código postal al instante. Buscador de códigos postales de Colombia, México, USA y 22 países.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0f172a",
+  "theme_color": "#1e40af",
+  "orientation": "any",
+  "icons": [
+    {
+      "src": "img/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "img/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Colombia",
+      "url": "/country.html?id=colombia",
+      "description": "Códigos postales de Colombia"
+    },
+    {
+      "name": "México",
+      "url": "/country.html?id=mexico",
+      "description": "Códigos postales de México"
+    },
+    {
+      "name": "USA",
+      "url": "/country.html?id=usa",
+      "description": "ZIP codes de Estados Unidos"
+    },
+    {
+      "name": "Guías",
+      "url": "/guias.html",
+      "description": "¿Cuál es mi código postal?"
+    },
+    {
+      "name": "Juegos",
+      "url": "/juegos.html",
+      "description": "Juegos de códigos postales"
+    }
+  ],
+  "categories": [
+    "education",
+    "utilities",
+    "reference"
+  ],
+  "lang": "es",
+  "dir": "ltr"
+}
