@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <rect width="512" height="512" rx="96" fill="#0f4c81"/>
+  <g transform="translate(256,240)">
+    <!-- Envelope body -->
+    <rect x="-140" y="-60" width="280" height="170" rx="16" fill="#fff" opacity=".95"/>
+    <!-- Envelope flap -->
+    <path d="M-140-60 L0 50 L140-60" fill="none" stroke="#f59e0b" stroke-width="14" stroke-linejoin="round"/>
+    <!-- Location pin -->
+    <g transform="translate(0,-95)">
+      <path d="M0-55 C-30-55-50-35-50-10 C-50 25 0 55 0 55 C0 55 50 25 50-10 C50-35 30-55 0-55Z" fill="#f59e0b"/>
+      <circle cx="0" cy="-12" r="16" fill="#0f4c81"/>
+    </g>
+  </g>
+  <!-- "CP" text -->
+  <text x="256" y="440" text-anchor="middle" font-family="Arial,sans-serif" font-weight="700" font-size="72" fill="#fff" opacity=".7">CP</text>
+</svg>
