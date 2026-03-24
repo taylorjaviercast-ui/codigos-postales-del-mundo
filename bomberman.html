@@ -1,0 +1,790 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-MDRT6N8V77"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-MDRT6N8V77');
+  </script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <title>Bomberman Postal 💣📮 – Juego de Códigos Postales del Mundo</title>
+  <meta name="description" content="Juega Bomberman Postal gratis. Mueve tu cartero, pon bombas, destruye cajas y encuentra códigos postales. Juego adictivo de estrategia con temática postal.">
+  <meta name="keywords" content="bomberman postal, juego códigos postales, juego gratis online, bomberman gratis, juego de cartero, juego postal">
+  <meta property="og:locale" content="es_LA">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Códigos Postales del Mundo">
+  <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+  <style>
+    * { margin:0; padding:0; box-sizing:border-box; }
+    body { font-family:'DM Sans',sans-serif; background:#0c1222; color:#e2e8f0; overflow:hidden; height:100vh; }
+    
+    /* Top bar */
+    .game-topbar { 
+      display:flex; align-items:center; justify-content:space-between; 
+      padding:.5rem 1rem; background:rgba(15,23,42,.95); border-bottom:1px solid rgba(255,255,255,.08);
+      position:relative; z-index:10;
+    }
+    .game-topbar a { color:#60a5fa; text-decoration:none; font-size:.85rem; font-weight:600; }
+    .game-topbar a:hover { color:#93bbfd; }
+    .game-title { font-size:1rem; font-weight:700; }
+    .game-title span { color:#f59e0b; }
+    
+    /* HUD */
+    .game-hud {
+      display:flex; justify-content:center; gap:2rem; padding:.5rem;
+      background:rgba(15,23,42,.9); font-family:'JetBrains Mono',monospace; font-size:.85rem;
+    }
+    .hud-item { display:flex; align-items:center; gap:.4rem; }
+    .hud-val { color:#f59e0b; font-weight:700; }
+    
+    /* Canvas container */
+    .game-container {
+      display:flex; justify-content:center; align-items:center;
+      height:calc(100vh - 90px); background:#0c1222;
+    }
+    canvas { 
+      border:2px solid rgba(96,165,250,.3); border-radius:8px;
+      box-shadow:0 0 30px rgba(96,165,250,.1);
+      image-rendering:pixelated;
+    }
+    
+    /* Start/Game Over screen */
+    .game-overlay {
+      position:fixed; inset:0; z-index:50;
+      display:flex; justify-content:center; align-items:center;
+      background:rgba(12,18,34,.95); backdrop-filter:blur(8px);
+    }
+    .game-overlay.hidden { display:none; }
+    .overlay-box {
+      text-align:center; max-width:420px; padding:2.5rem;
+      background:rgba(30,41,59,.8); border-radius:16px;
+      border:1px solid rgba(96,165,250,.2);
+      box-shadow:0 0 40px rgba(96,165,250,.1);
+    }
+    .overlay-box h1 { font-size:2rem; margin-bottom:.5rem; }
+    .overlay-box h1 span { color:#f59e0b; }
+    .overlay-box p { color:#94a3b8; font-size:.95rem; line-height:1.6; margin-bottom:1.5rem; }
+    .overlay-box .subtitle { font-size:1.1rem; color:#e2e8f0; margin-bottom:1rem; }
+    .btn-play {
+      padding:.75rem 2.5rem; border:none; border-radius:99px;
+      background:linear-gradient(135deg,#3b82f6,#2563eb); color:#fff;
+      font-size:1.1rem; font-weight:700; cursor:pointer;
+      font-family:'DM Sans',sans-serif;
+      transition:all .3s; box-shadow:0 4px 15px rgba(59,130,246,.3);
+    }
+    .btn-play:hover { transform:scale(1.05); box-shadow:0 6px 25px rgba(59,130,246,.4); }
+    .controls-info {
+      margin-top:1.5rem; font-size:.8rem; color:#64748b;
+      display:grid; grid-template-columns:1fr 1fr; gap:.5rem; text-align:left;
+    }
+    .controls-info div { padding:.4rem .6rem; background:rgba(255,255,255,.05); border-radius:6px; }
+    .controls-info kbd { 
+      background:rgba(255,255,255,.1); padding:.1rem .4rem; border-radius:4px; 
+      font-family:'JetBrains Mono',monospace; font-size:.75rem; color:#e2e8f0;
+    }
+    .score-final { font-size:2.5rem; font-weight:700; color:#f59e0b; margin:.5rem 0; }
+    
+    /* Mobile controls */
+    .mobile-controls {
+      display:none; position:fixed; bottom:10px; left:50%; transform:translateX(-50%);
+      z-index:20; gap:5px;
+    }
+    .mobile-controls button {
+      width:55px; height:55px; border:none; border-radius:12px;
+      background:rgba(59,130,246,.3); color:#fff; font-size:1.5rem;
+      cursor:pointer; backdrop-filter:blur(4px);
+      border:1px solid rgba(255,255,255,.1);
+    }
+    .mobile-controls button:active { background:rgba(59,130,246,.6); }
+    @media (max-width:768px) {
+      .mobile-controls { display:grid; grid-template-columns:repeat(3,55px); grid-template-rows:repeat(3,55px); }
+      .mc-up { grid-column:2; grid-row:1; }
+      .mc-left { grid-column:1; grid-row:2; }
+      .mc-bomb { grid-column:2; grid-row:2; background:rgba(245,158,11,.4) !important; }
+      .mc-right { grid-column:3; grid-row:2; }
+      .mc-down { grid-column:2; grid-row:3; }
+    }
+  </style>
+</head>
+<body>
+  <!-- Top Bar -->
+  <div class="game-topbar">
+    <a href="juegos.html">← Volver a Juegos</a>
+    <div class="game-title">💣 Bomberman <span>Postal</span> 📮</div>
+    <a href="index.html">Inicio</a>
+  </div>
+  
+  <!-- HUD -->
+  <div class="game-hud">
+    <div class="hud-item">❤️ Vidas: <span class="hud-val" id="hud-lives">3</span></div>
+    <div class="hud-item">💣 Bombas: <span class="hud-val" id="hud-bombs">1</span></div>
+    <div class="hud-item">⭐ Puntos: <span class="hud-val" id="hud-score">0</span></div>
+    <div class="hud-item">📮 Nivel: <span class="hud-val" id="hud-level">1</span></div>
+    <div class="hud-item">⏱️ <span class="hud-val" id="hud-time">120</span>s</div>
+  </div>
+  
+  <!-- Game Canvas -->
+  <div class="game-container">
+    <canvas id="game-canvas"></canvas>
+  </div>
+  
+  <!-- Mobile Controls -->
+  <div class="mobile-controls">
+    <button class="mc-up" ontouchstart="mobileKey('up')" onclick="mobileKey('up')">⬆️</button>
+    <button class="mc-left" ontouchstart="mobileKey('left')" onclick="mobileKey('left')">⬅️</button>
+    <button class="mc-bomb" ontouchstart="mobileKey('bomb')" onclick="mobileKey('bomb')">💣</button>
+    <button class="mc-right" ontouchstart="mobileKey('right')" onclick="mobileKey('right')">➡️</button>
+    <button class="mc-down" ontouchstart="mobileKey('down')" onclick="mobileKey('down')">⬇️</button>
+  </div>
+  
+  <!-- Start Screen -->
+  <div class="game-overlay" id="start-screen">
+    <div class="overlay-box">
+      <h1>💣 Bomberman <span>Postal</span> 📮</h1>
+      <p class="subtitle">¡Ayuda al cartero a entregar todos los paquetes!</p>
+      <p>Mueve tu cartero por la ciudad, pon bombas para destruir cajas y encuentra los códigos postales escondidos. ¡Cuidado con los enemigos!</p>
+      <button class="btn-play" id="btn-start" onclick="startGame()">🎮 Jugar</button>
+      <div class="controls-info">
+        <div><kbd>↑</kbd><kbd>↓</kbd><kbd>←</kbd><kbd>→</kbd> Mover</div>
+        <div><kbd>Espacio</kbd> Poner bomba</div>
+        <div>📮 Recoge códigos postales</div>
+        <div>⭐ Powerups: +bombas, +velocidad</div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Game Over Screen -->
+  <div class="game-overlay hidden" id="gameover-screen">
+    <div class="overlay-box">
+      <h1>💥 Game Over</h1>
+      <div class="score-final" id="final-score">0</div>
+      <p id="final-msg">¡Buen intento! Los códigos postales te esperan.</p>
+      <p id="final-stats" style="font-size:.85rem;color:#64748b;margin-bottom:1rem"></p>
+      <button class="btn-play" onclick="startGame()">🔄 Jugar de Nuevo</button>
+      <br><br>
+      <a href="juegos.html" style="color:#60a5fa;font-size:.9rem">← Más juegos</a>
+    </div>
+  </div>
+  
+  <!-- Win Screen -->
+  <div class="game-overlay hidden" id="win-screen">
+    <div class="overlay-box">
+      <h1>🎉 ¡Nivel Completado!</h1>
+      <div class="score-final" id="level-score">0</div>
+      <p id="level-msg">¡Encontraste todos los códigos postales!</p>
+      <button class="btn-play" id="btn-next" onclick="nextLevel()">📮 Siguiente Nivel →</button>
+    </div>
+  </div>
+
+<script>
+const canvas = document.getElementById('game-canvas');
+const ctx = canvas.getContext('2d');
+
+// Game constants
+const TILE = 40;
+const COLS = 15;
+const ROWS = 13;
+canvas.width = COLS * TILE;
+canvas.height = ROWS * TILE;
+
+// Tile types
+const EMPTY = 0, WALL = 1, BOX = 2, POSTAL = 3, POWERUP_BOMB = 4, POWERUP_SPEED = 5, POWERUP_RANGE = 6;
+
+// Colors
+const COLORS = {
+  floor: '#1a2332',
+  floorAlt: '#1e2940',
+  wall: '#374151',
+  wallTop: '#4b5563',
+  box: '#92400e',
+  boxTop: '#b45309',
+  postal: '#f59e0b',
+  player: '#3b82f6',
+  enemy: '#ef4444',
+  bomb: '#1f2937',
+  explosion: '#f97316',
+  powerBomb: '#8b5cf6',
+  powerSpeed: '#10b981',
+  powerRange: '#06b6d4'
+};
+
+// Postal codes for collectibles
+const POSTAL_CODES = [
+  '110111','10001','33101','06600','48001','90210','08001','28001',
+  '75001','10115','00100','1000','20001','M5H','EC1A','100-0001',
+  '110221','050001','760001','130001','080001','680001','110311',
+  '050034','760045','01000','44100','64000','03100','11000'
+];
+
+// Game state
+let game = {
+  level: 1, score: 0, lives: 3, time: 120, maxBombs: 1, bombRange: 1,
+  speed: 1, running: false, grid: [], bombs: [], explosions: [], enemies: [],
+  player: {x:1, y:1, moving:false, dir:'down', frame:0},
+  postalFound: 0, postalTotal: 0, collected: []
+};
+
+let keys = {};
+let lastMove = 0;
+let gameTimer = null;
+
+// Generate level
+function generateLevel(level) {
+  const grid = [];
+  for (let y = 0; y < ROWS; y++) {
+    grid[y] = [];
+    for (let x = 0; x < COLS; x++) {
+      if (y === 0 || y === ROWS-1 || x === 0 || x === COLS-1) {
+        grid[y][x] = WALL; // Border walls
+      } else if (y % 2 === 0 && x % 2 === 0) {
+        grid[y][x] = WALL; // Fixed walls (bomberman pattern)
+      } else {
+        grid[y][x] = EMPTY;
+      }
+    }
+  }
+  
+  // Add breakable boxes (more boxes = harder levels)
+  const boxDensity = Math.min(0.4 + level * 0.05, 0.65);
+  for (let y = 1; y < ROWS-1; y++) {
+    for (let x = 1; x < COLS-1; x++) {
+      if (grid[y][x] !== EMPTY) continue;
+      // Keep starting area clear
+      if ((x <= 2 && y <= 2) || (x >= COLS-3 && y >= ROWS-3)) continue;
+      if (Math.random() < boxDensity) {
+        grid[y][x] = BOX;
+      }
+    }
+  }
+  
+  // Hide postal codes in boxes
+  const postalCount = Math.min(3 + level, 8);
+  let placed = 0;
+  const boxes = [];
+  for (let y = 0; y < ROWS; y++)
+    for (let x = 0; x < COLS; x++)
+      if (grid[y][x] === BOX) boxes.push({x,y});
+  
+  // Shuffle boxes
+  for (let i = boxes.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [boxes[i], boxes[j]] = [boxes[j], boxes[i]];
+  }
+  
+  for (let i = 0; i < Math.min(postalCount, boxes.length); i++) {
+    grid[boxes[i].y][boxes[i].x] = POSTAL;
+    placed++;
+  }
+  
+  // Add powerups in some boxes
+  for (let i = postalCount; i < Math.min(postalCount + 3, boxes.length); i++) {
+    const type = [POWERUP_BOMB, POWERUP_SPEED, POWERUP_RANGE][Math.floor(Math.random() * 3)];
+    grid[boxes[i].y][boxes[i].x] = type;
+  }
+  
+  // Add enemies
+  const enemyCount = Math.min(2 + level, 6);
+  const enemies = [];
+  for (let i = 0; i < enemyCount; i++) {
+    let ex, ey;
+    do {
+      ex = Math.floor(Math.random() * (COLS-2)) + 1;
+      ey = Math.floor(Math.random() * (ROWS-2)) + 1;
+    } while (grid[ey][ex] !== EMPTY || (ex <= 2 && ey <= 2));
+    enemies.push({x: ex, y: ey, dir: ['up','down','left','right'][Math.floor(Math.random()*4)], moveTimer: 0, alive: true});
+  }
+  
+  return { grid, postalTotal: placed, enemies };
+}
+
+// Draw
+function draw() {
+  ctx.fillStyle = COLORS.floor;
+  ctx.fillRect(0, 0, canvas.width, canvas.height);
+  
+  // Draw grid
+  for (let y = 0; y < ROWS; y++) {
+    for (let x = 0; x < COLS; x++) {
+      const px = x * TILE;
+      const py = y * TILE;
+      const tile = game.grid[y][x];
+      
+      // Checkerboard floor
+      if ((x + y) % 2 === 0) {
+        ctx.fillStyle = COLORS.floorAlt;
+        ctx.fillRect(px, py, TILE, TILE);
+      }
+      
+      if (tile === WALL) {
+        ctx.fillStyle = COLORS.wall;
+        ctx.fillRect(px, py, TILE, TILE);
+        ctx.fillStyle = COLORS.wallTop;
+        ctx.fillRect(px+2, py+2, TILE-4, TILE-8);
+        // Brick pattern
+        ctx.strokeStyle = '#2d3748';
+        ctx.lineWidth = 1;
+        ctx.strokeRect(px+2, py+2, (TILE-4)/2, (TILE-8)/2);
+        ctx.strokeRect(px+2+(TILE-4)/2, py+2, (TILE-4)/2, (TILE-8)/2);
+      }
+      else if (tile === BOX || tile === POSTAL || tile >= POWERUP_BOMB) {
+        ctx.fillStyle = COLORS.box;
+        ctx.fillRect(px+2, py+4, TILE-4, TILE-4);
+        ctx.fillStyle = COLORS.boxTop;
+        ctx.fillRect(px+2, py+2, TILE-4, TILE-8);
+        // Box cross pattern
+        ctx.strokeStyle = '#78350f';
+        ctx.lineWidth = 1.5;
+        ctx.beginPath();
+        ctx.moveTo(px+2, py+2);
+        ctx.lineTo(px+TILE-2, py+TILE-2);
+        ctx.moveTo(px+TILE-2, py+2);
+        ctx.lineTo(px+2, py+TILE-2);
+        ctx.stroke();
+        // Question mark for hidden items
+        if (tile !== BOX) {
+          ctx.fillStyle = 'rgba(255,255,255,.15)';
+          ctx.font = 'bold 16px JetBrains Mono';
+          ctx.textAlign = 'center';
+          ctx.fillText('?', px+TILE/2, py+TILE/2+5);
+        }
+      }
+    }
+  }
+  
+  // Draw collected postal items on floor
+  for (const c of game.collected) {
+    ctx.fillStyle = 'rgba(245,158,11,.15)';
+    ctx.fillRect(c.x*TILE, c.y*TILE, TILE, TILE);
+    ctx.font = '10px JetBrains Mono';
+    ctx.fillStyle = 'rgba(245,158,11,.4)';
+    ctx.textAlign = 'center';
+    ctx.fillText(c.code, c.x*TILE+TILE/2, c.y*TILE+TILE/2+3);
+  }
+  
+  // Draw bombs
+  for (const b of game.bombs) {
+    const pulse = Math.sin(Date.now() / 150) * 3;
+    ctx.fillStyle = COLORS.bomb;
+    ctx.beginPath();
+    ctx.arc(b.x*TILE+TILE/2, b.y*TILE+TILE/2, 14+pulse, 0, Math.PI*2);
+    ctx.fill();
+    ctx.fillStyle = '#374151';
+    ctx.beginPath();
+    ctx.arc(b.x*TILE+TILE/2, b.y*TILE+TILE/2, 10+pulse, 0, Math.PI*2);
+    ctx.fill();
+    // Fuse
+    ctx.strokeStyle = '#f59e0b';
+    ctx.lineWidth = 2;
+    ctx.beginPath();
+    ctx.moveTo(b.x*TILE+TILE/2+5, b.y*TILE+TILE/2-10);
+    ctx.lineTo(b.x*TILE+TILE/2+10, b.y*TILE+TILE/2-15);
+    ctx.stroke();
+    // Spark
+    const spark = Math.random() > 0.3;
+    if (spark) {
+      ctx.fillStyle = '#fbbf24';
+      ctx.beginPath();
+      ctx.arc(b.x*TILE+TILE/2+10, b.y*TILE+TILE/2-16, 3, 0, Math.PI*2);
+      ctx.fill();
+    }
+    // Timer
+    const timeLeft = Math.max(0, Math.ceil((b.timer - Date.now()) / 1000));
+    ctx.fillStyle = '#fff';
+    ctx.font = 'bold 12px JetBrains Mono';
+    ctx.textAlign = 'center';
+    ctx.fillText(timeLeft, b.x*TILE+TILE/2, b.y*TILE+TILE/2+4);
+  }
+  
+  // Draw explosions
+  for (const e of game.explosions) {
+    const alpha = Math.max(0, 1 - (Date.now() - e.start) / 500);
+    const size = TILE * (0.5 + alpha * 0.5);
+    ctx.fillStyle = `rgba(249,115,22,${alpha})`;
+    ctx.beginPath();
+    ctx.arc(e.x*TILE+TILE/2, e.y*TILE+TILE/2, size/2, 0, Math.PI*2);
+    ctx.fill();
+    ctx.fillStyle = `rgba(254,215,170,${alpha*0.8})`;
+    ctx.beginPath();
+    ctx.arc(e.x*TILE+TILE/2, e.y*TILE+TILE/2, size/4, 0, Math.PI*2);
+    ctx.fill();
+  }
+  
+  // Draw enemies
+  for (const e of game.enemies) {
+    if (!e.alive) continue;
+    const ex = e.x * TILE;
+    const ey = e.y * TILE;
+    // Body
+    ctx.fillStyle = COLORS.enemy;
+    ctx.beginPath();
+    ctx.arc(ex+TILE/2, ey+TILE/2-2, 14, Math.PI, 0);
+    ctx.fillRect(ex+TILE/2-14, ey+TILE/2-2, 28, 14);
+    ctx.fill();
+    // Eyes
+    ctx.fillStyle = '#fff';
+    ctx.beginPath();
+    ctx.arc(ex+TILE/2-5, ey+TILE/2-4, 4, 0, Math.PI*2);
+    ctx.arc(ex+TILE/2+5, ey+TILE/2-4, 4, 0, Math.PI*2);
+    ctx.fill();
+    ctx.fillStyle = '#1f2937';
+    ctx.beginPath();
+    ctx.arc(ex+TILE/2-4, ey+TILE/2-3, 2, 0, Math.PI*2);
+    ctx.arc(ex+TILE/2+6, ey+TILE/2-3, 2, 0, Math.PI*2);
+    ctx.fill();
+    // Teeth
+    ctx.fillStyle = '#fff';
+    for (let t = -2; t <= 2; t++) {
+      ctx.fillRect(ex+TILE/2+t*5-2, ey+TILE/2+8, 4, 4);
+    }
+  }
+  
+  // Draw player (cartero)
+  const px = game.player.x * TILE;
+  const py = game.player.y * TILE;
+  // Body
+  ctx.fillStyle = COLORS.player;
+  ctx.beginPath();
+  ctx.arc(px+TILE/2, py+TILE/2, 15, 0, Math.PI*2);
+  ctx.fill();
+  // Hat
+  ctx.fillStyle = '#1e40af';
+  ctx.fillRect(px+TILE/2-12, py+TILE/2-18, 24, 8);
+  ctx.fillRect(px+TILE/2-8, py+TILE/2-24, 16, 8);
+  // Face
+  ctx.fillStyle = '#fcd34d';
+  ctx.beginPath();
+  ctx.arc(px+TILE/2, py+TILE/2-2, 8, 0, Math.PI*2);
+  ctx.fill();
+  // Eyes
+  ctx.fillStyle = '#1f2937';
+  ctx.beginPath();
+  ctx.arc(px+TILE/2-3, py+TILE/2-4, 2, 0, Math.PI*2);
+  ctx.arc(px+TILE/2+3, py+TILE/2-4, 2, 0, Math.PI*2);
+  ctx.fill();
+  // Mail bag
+  ctx.fillStyle = '#92400e';
+  ctx.fillRect(px+TILE/2+8, py+TILE/2, 8, 10);
+  ctx.fillStyle = '#f59e0b';
+  ctx.font = '8px sans-serif';
+  ctx.fillText('📮', px+TILE/2+7, py+TILE/2+9);
+}
+
+// Move player
+function movePlayer(dx, dy) {
+  const now = Date.now();
+  const moveDelay = 160 - game.speed * 20;
+  if (now - lastMove < moveDelay) return;
+  
+  const nx = game.player.x + dx;
+  const ny = game.player.y + dy;
+  
+  if (nx < 0 || nx >= COLS || ny < 0 || ny >= ROWS) return;
+  
+  const tile = game.grid[ny][nx];
+  if (tile === WALL || tile === BOX || tile === POSTAL || tile >= POWERUP_BOMB) return;
+  if (game.bombs.some(b => b.x === nx && b.y === ny)) return;
+  
+  game.player.x = nx;
+  game.player.y = ny;
+  lastMove = now;
+  
+  // Check enemy collision
+  checkPlayerEnemyCollision();
+}
+
+function checkPlayerEnemyCollision() {
+  for (const e of game.enemies) {
+    if (e.alive && e.x === game.player.x && e.y === game.player.y) {
+      playerHit();
+    }
+  }
+}
+
+function playerHit() {
+  game.lives--;
+  document.getElementById('hud-lives').textContent = game.lives;
+  if (game.lives <= 0) {
+    gameOver();
+  } else {
+    // Respawn
+    game.player.x = 1;
+    game.player.y = 1;
+  }
+}
+
+// Place bomb
+function placeBomb() {
+  const {x, y} = game.player;
+  if (game.bombs.filter(b => !b.exploded).length >= game.maxBombs) return;
+  if (game.bombs.some(b => b.x === x && b.y === y)) return;
+  
+  game.bombs.push({
+    x, y, timer: Date.now() + 2500, range: game.bombRange, exploded: false
+  });
+}
+
+// Explode bomb
+function explodeBomb(bomb) {
+  bomb.exploded = true;
+  const dirs = [[0,0],[1,0],[-1,0],[0,1],[0,-1]];
+  
+  for (const [dx, dy] of dirs) {
+    for (let r = 0; r <= bomb.range; r++) {
+      const ex = bomb.x + dx * r;
+      const ey = bomb.y + dy * r;
+      if (ex < 0 || ex >= COLS || ey < 0 || ey >= ROWS) break;
+      
+      const tile = game.grid[ey][ex];
+      if (tile === WALL) break;
+      
+      game.explosions.push({x: ex, y: ey, start: Date.now()});
+      
+      if (tile === BOX) {
+        game.grid[ey][ex] = EMPTY;
+        game.score += 10;
+        break;
+      }
+      if (tile === POSTAL) {
+        game.grid[ey][ex] = EMPTY;
+        const code = POSTAL_CODES[Math.floor(Math.random() * POSTAL_CODES.length)];
+        game.collected.push({x: ex, y: ey, code});
+        game.postalFound++;
+        game.score += 100;
+        break;
+      }
+      if (tile === POWERUP_BOMB) {
+        game.grid[ey][ex] = EMPTY;
+        game.maxBombs = Math.min(game.maxBombs + 1, 5);
+        game.score += 50;
+        document.getElementById('hud-bombs').textContent = game.maxBombs;
+        break;
+      }
+      if (tile === POWERUP_SPEED) {
+        game.grid[ey][ex] = EMPTY;
+        game.speed = Math.min(game.speed + 1, 5);
+        game.score += 50;
+        break;
+      }
+      if (tile === POWERUP_RANGE) {
+        game.grid[ey][ex] = EMPTY;
+        game.bombRange = Math.min(game.bombRange + 1, 4);
+        game.score += 50;
+        break;
+      }
+      
+      // Check enemy hit
+      for (const en of game.enemies) {
+        if (en.alive && en.x === ex && en.y === ey) {
+          en.alive = false;
+          game.score += 200;
+        }
+      }
+      
+      // Check player hit
+      if (game.player.x === ex && game.player.y === ey) {
+        playerHit();
+      }
+    }
+  }
+}
+
+// Move enemies
+function moveEnemies() {
+  for (const e of game.enemies) {
+    if (!e.alive) continue;
+    e.moveTimer++;
+    if (e.moveTimer < (10 - Math.min(game.level, 5))) return;
+    e.moveTimer = 0;
+    
+    // Random direction change
+    if (Math.random() < 0.2) {
+      e.dir = ['up','down','left','right'][Math.floor(Math.random()*4)];
+    }
+    
+    const dirs = {up:[0,-1], down:[0,1], left:[-1,0], right:[1,0]};
+    const [dx,dy] = dirs[e.dir];
+    const nx = e.x + dx;
+    const ny = e.y + dy;
+    
+    if (nx > 0 && nx < COLS-1 && ny > 0 && ny < ROWS-1 && 
+        game.grid[ny][nx] === EMPTY && !game.bombs.some(b => b.x === nx && b.y === ny)) {
+      e.x = nx;
+      e.y = ny;
+    } else {
+      e.dir = ['up','down','left','right'][Math.floor(Math.random()*4)];
+    }
+    
+    // Check collision with player
+    if (e.x === game.player.x && e.y === game.player.y) {
+      playerHit();
+    }
+  }
+}
+
+// Update
+function update() {
+  if (!game.running) return;
+  
+  // Handle keys
+  if (keys['ArrowUp'] || keys['w']) movePlayer(0, -1);
+  if (keys['ArrowDown'] || keys['s']) movePlayer(0, 1);
+  if (keys['ArrowLeft'] || keys['a']) movePlayer(-1, 0);
+  if (keys['ArrowRight'] || keys['d']) movePlayer(1, 0);
+  
+  // Update bombs
+  const now = Date.now();
+  for (const b of game.bombs) {
+    if (!b.exploded && now >= b.timer) {
+      explodeBomb(b);
+    }
+  }
+  
+  // Clean old explosions
+  game.explosions = game.explosions.filter(e => now - e.start < 500);
+  // Clean exploded bombs
+  game.bombs = game.bombs.filter(b => !b.exploded || now - b.timer < 500);
+  
+  // Move enemies
+  moveEnemies();
+  
+  // Update HUD
+  document.getElementById('hud-score').textContent = game.score;
+  
+  // Check level complete
+  if (game.postalFound >= game.postalTotal) {
+    levelComplete();
+  }
+  
+  draw();
+  if (game.running) requestAnimationFrame(update);
+}
+
+// Timer
+function startTimer() {
+  if (gameTimer) clearInterval(gameTimer);
+  gameTimer = setInterval(() => {
+    if (!game.running) return;
+    game.time--;
+    document.getElementById('hud-time').textContent = game.time;
+    if (game.time <= 0) gameOver();
+  }, 1000);
+}
+
+// Start game
+function startGame() {
+  document.getElementById('start-screen').classList.add('hidden');
+  document.getElementById('gameover-screen').classList.add('hidden');
+  document.getElementById('win-screen').classList.add('hidden');
+  
+  game.level = 1;
+  game.score = 0;
+  game.lives = 3;
+  game.maxBombs = 1;
+  game.bombRange = 1;
+  game.speed = 1;
+  
+  initLevel();
+}
+
+function initLevel() {
+  const levelData = generateLevel(game.level);
+  game.grid = levelData.grid;
+  game.postalTotal = levelData.postalTotal;
+  game.enemies = levelData.enemies;
+  game.bombs = [];
+  game.explosions = [];
+  game.collected = [];
+  game.postalFound = 0;
+  game.player = {x:1, y:1};
+  game.time = Math.max(120 - (game.level - 1) * 10, 60);
+  game.running = true;
+  
+  // Update HUD
+  document.getElementById('hud-lives').textContent = game.lives;
+  document.getElementById('hud-bombs').textContent = game.maxBombs;
+  document.getElementById('hud-score').textContent = game.score;
+  document.getElementById('hud-level').textContent = game.level;
+  document.getElementById('hud-time').textContent = game.time;
+  
+  startTimer();
+  update();
+}
+
+function levelComplete() {
+  game.running = false;
+  if (gameTimer) clearInterval(gameTimer);
+  game.score += game.time * 10; // Time bonus
+  
+  document.getElementById('level-score').textContent = game.score;
+  document.getElementById('level-msg').textContent = 
+    `¡Encontraste ${game.postalFound} códigos postales! Bonus de tiempo: +${game.time * 10}`;
+  document.getElementById('win-screen').classList.remove('hidden');
+}
+
+function nextLevel() {
+  document.getElementById('win-screen').classList.add('hidden');
+  game.level++;
+  initLevel();
+}
+
+function gameOver() {
+  game.running = false;
+  if (gameTimer) clearInterval(gameTimer);
+  
+  document.getElementById('final-score').textContent = game.score;
+  document.getElementById('final-stats').textContent = 
+    `Nivel ${game.level} · ${game.postalFound}/${game.postalTotal} códigos postales · ${game.enemies.filter(e=>!e.alive).length} enemigos eliminados`;
+  
+  if (game.score >= 1000) {
+    document.getElementById('final-msg').textContent = '🏆 ¡Increíble! Eres un maestro postal.';
+  } else if (game.score >= 500) {
+    document.getElementById('final-msg').textContent = '⭐ ¡Muy bien! Casi dominas las rutas postales.';
+  } else {
+    document.getElementById('final-msg').textContent = '📮 ¡Buen intento! Los códigos postales te esperan.';
+  }
+  
+  document.getElementById('gameover-screen').classList.remove('hidden');
+}
+
+// Input
+document.addEventListener('keydown', e => {
+  keys[e.key] = true;
+  if (e.key === ' ' || e.key === 'Enter') {
+    e.preventDefault();
+    if (game.running) placeBomb();
+  }
+});
+document.addEventListener('keyup', e => { keys[e.key] = false; });
+
+// Mobile controls
+function mobileKey(dir) {
+  if (!game.running) return;
+  if (dir === 'up') movePlayer(0, -1);
+  if (dir === 'down') movePlayer(0, 1);
+  if (dir === 'left') movePlayer(-1, 0);
+  if (dir === 'right') movePlayer(1, 0);
+  if (dir === 'bomb') placeBomb();
+}
+
+// Prevent scrolling on mobile
+document.addEventListener('touchmove', e => e.preventDefault(), {passive:false});
+</script>
+
+  <!-- Cookie Banner -->
+  <div id="cookie-banner" style="display:none;position:fixed;bottom:0;left:0;right:0;z-index:9999;background:rgba(15,23,42,.97);backdrop-filter:blur(12px);padding:1rem 1.5rem;box-shadow:0 -4px 20px rgba(0,0,0,.2);border-top:1px solid rgba(255,255,255,.08)">
+    <div style="max-width:1280px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:1rem;flex-wrap:wrap">
+      <p style="color:rgba(255,255,255,.85);font-size:.88rem;margin:0;flex:1;min-width:250px;line-height:1.6">🍪 Este sitio utiliza cookies para mejorar tu experiencia. <a href="privacidad.html" style="color:#60a5fa;text-decoration:underline">Política de Privacidad</a>.</p>
+      <div style="display:flex;gap:.5rem;flex-shrink:0">
+        <button onclick="document.getElementById('cookie-banner').style.display='none';localStorage.setItem('cookies-accepted','1')" style="padding:.5rem 1.2rem;border:1px solid rgba(255,255,255,.2);border-radius:99px;background:transparent;color:rgba(255,255,255,.7);cursor:pointer;font-size:.82rem;font-weight:600">Rechazar</button>
+        <button onclick="document.getElementById('cookie-banner').style.display='none';localStorage.setItem('cookies-accepted','1')" style="padding:.5rem 1.5rem;border:none;border-radius:99px;background:linear-gradient(135deg,#3b82f6,#2563eb);color:#fff;cursor:pointer;font-size:.82rem;font-weight:700">Aceptar</button>
+      </div>
+    </div>
+  </div>
+  <script>if(!localStorage.getItem("cookies-accepted"))document.getElementById("cookie-banner").style.display="block";</script>
+</body>
+</html>
