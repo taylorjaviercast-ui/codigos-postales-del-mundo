@@ -1,12 +1,12 @@
 # Códigos Postales del Mundo - robots.txt
-# https://codigos-postales-del-mundo.netlify.app
+# https://www.codigospostalesdelmundo.com
 
 User-agent: *
 Allow: /
 Disallow: /404.html
 
 # Sitemaps
-Sitemap: https://codigos-postales-del-mundo.netlify.app/sitemap.xml
+Sitemap: https://www.codigospostalesdelmundo.com/sitemap.xml
 
 # Crawl-delay (be nice to our server)
 Crawl-delay: 1
