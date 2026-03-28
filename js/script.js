@@ -14,6 +14,11 @@
   let DATA = null;
   const CACHE = {};
 
+  /* Normalizar texto: quita tildes, acentos y diacríticos */
+  function normText(str) {
+    return str.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
+  }
+
   /* ================================================================
      1b. PATH RESOLUTION - Bulletproof for Vercel cleanUrls
      ================================================================ */
@@ -153,7 +158,7 @@
           state: parentCity.state,
           parentCity: parentCity.name,
           localidad: zone.localidad,
-          keywords: [zone.name, zone.postalCode, zone.localidad, parentCity.name, parentCity.state, country.name].join(' ').toLowerCase(),
+          keywords: normText([zone.name, zone.postalCode, zone.localidad, parentCity.name, parentCity.state, country.name].join(' ')),
           url: `city.html?country=${countryId}&city=${cityData.cityId}&barrio=${encodeURIComponent(zone.name)}`
         });
       });
@@ -229,7 +234,7 @@
           state: parentCity.state,
           parentCity: parentCity.name,
           localidad: zone.localidad,
-          keywords: [zone.name, zone.postalCode, zone.localidad, parentCity.name, parentCity.state, country.name, 'colonia'].join(' ').toLowerCase(),
+          keywords: normText([zone.name, zone.postalCode, zone.localidad, parentCity.name, parentCity.state, country.name, 'colonia'].join(' ')),
           url: `city.html?country=${countryId}&city=${cityData.cityId}&barrio=${encodeURIComponent(zone.name)}`
         });
       });
@@ -284,7 +289,7 @@
           name: zone.name, flag: country.flag, country: country.name,
           postalCode: zone.postalCode, state: parentCity.state,
           parentCity: parentCity.name, localidad: zone.localidad,
-          keywords: [zone.name, zone.postalCode, zone.localidad, parentCity.name, parentCity.state, country.name, 'neighborhood', 'zip code'].join(' ').toLowerCase(),
+          keywords: normText([zone.name, zone.postalCode, zone.localidad, parentCity.name, parentCity.state, country.name, 'neighborhood', 'zip code'].join(' ')),
           url: `city.html?country=${countryId}&city=${cityData.cityId}&barrio=${encodeURIComponent(zone.name)}`
         });
       });
@@ -306,7 +311,7 @@
         id: country.id,
         name: country.name,
         flag: country.flag,
-        keywords: [country.name, country.nameEn, country.iso, country.flag].join(' ').toLowerCase(),
+        keywords: normText([country.name, country.nameEn, country.iso, country.flag].join(' ')),
         url: `country.html?id=${country.id}`
       });
       // Add each city
@@ -320,7 +325,7 @@
           country: country.name,
           postalCode: city.postalCode,
           state: city.state,
-          keywords: [city.name, city.postalCode, city.postalRange, city.state, country.name, country.nameEn].join(' ').toLowerCase(),
+          keywords: normText([city.name, city.postalCode, city.postalRange, city.state, country.name, country.nameEn].join(' ')),
           url: `city.html?country=${country.id}&city=${city.id}`
         });
       });
@@ -329,13 +334,13 @@
 
   function searchData(query) {
     if (!query || query.length < 2) return [];
-    const q = query.toLowerCase().trim();
+    const q = normText(query.trim());
     const results = searchIndex.filter(item => item.keywords.includes(q));
     // Sort: exact name match first, then barrios > cities > countries
     const typePriority = { barrio: 0, city: 1, country: 2 };
     results.sort((a, b) => {
-      const aExact = a.name.toLowerCase().startsWith(q) ? 0 : 1;
-      const bExact = b.name.toLowerCase().startsWith(q) ? 0 : 1;
+      const aExact = normText(a.name).startsWith(q) ? 0 : 1;
+      const bExact = normText(b.name).startsWith(q) ? 0 : 1;
       if (aExact !== bExact) return aExact - bExact;
       const aPri = typePriority[a.type] ?? 3;
       const bPri = typePriority[b.type] ?? 3;
