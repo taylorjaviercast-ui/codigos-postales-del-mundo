@@ -1,16 +1,7 @@
 {
-  "cleanUrls": true,
+  "cleanUrls": false,
   "trailingSlash": false,
   "headers": [
-    {
-      "source": "/(.*)",
-      "headers": [
-        { "key": "X-Frame-Options", "value": "SAMEORIGIN" },
-        { "key": "X-Content-Type-Options", "value": "nosniff" },
-        { "key": "Referrer-Policy", "value": "strict-origin-when-cross-origin" },
-        { "key": "X-XSS-Protection", "value": "1; mode=block" }
-      ]
-    },
     {
       "source": "/data/(.*)",
       "headers": [
@@ -18,13 +9,13 @@
       ]
     },
     {
-      "source": "/js/(.*)",
+      "source": "/(.*).js",
       "headers": [
         { "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }
       ]
     },
     {
-      "source": "/css/(.*)",
+      "source": "/(.*).css",
       "headers": [
         { "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }
       ]
@@ -34,31 +25,15 @@
       "headers": [
         { "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }
       ]
+    },
+    {
+      "source": "/(.*)",
+      "headers": [
+        { "key": "X-Frame-Options", "value": "SAMEORIGIN" },
+        { "key": "X-Content-Type-Options", "value": "nosniff" },
+        { "key": "Referrer-Policy", "value": "strict-origin-when-cross-origin" },
+        { "key": "X-XSS-Protection", "value": "1; mode=block" }
+      ]
     }
-  ],
-  "redirects": [
-    { "source": "/colombia", "destination": "/country.html?id=colombia", "statusCode": 301 },
-    { "source": "/mexico", "destination": "/country.html?id=mexico", "statusCode": 301 },
-    { "source": "/usa", "destination": "/country.html?id=usa", "statusCode": 301 },
-    { "source": "/estados-unidos", "destination": "/country.html?id=usa", "statusCode": 301 },
-    { "source": "/espana", "destination": "/country.html?id=espana", "statusCode": 301 },
-    { "source": "/argentina", "destination": "/country.html?id=argentina", "statusCode": 301 },
-    { "source": "/peru", "destination": "/country.html?id=peru", "statusCode": 301 },
-    { "source": "/brasil", "destination": "/country.html?id=brasil", "statusCode": 301 },
-    { "source": "/bogota", "destination": "/city.html?country=colombia&city=bogota", "statusCode": 301 },
-    { "source": "/medellin", "destination": "/city.html?country=colombia&city=medellin", "statusCode": 301 },
-    { "source": "/cali", "destination": "/city.html?country=colombia&city=cali", "statusCode": 301 },
-    { "source": "/barranquilla", "destination": "/city.html?country=colombia&city=barranquilla", "statusCode": 301 },
-    { "source": "/cartagena", "destination": "/city.html?country=colombia&city=cartagena", "statusCode": 301 },
-    { "source": "/cdmx", "destination": "/city.html?country=mexico&city=cdmx", "statusCode": 301 },
-    { "source": "/guadalajara", "destination": "/city.html?country=mexico&city=guadalajara", "statusCode": 301 },
-    { "source": "/monterrey", "destination": "/city.html?country=mexico&city=monterrey", "statusCode": 301 },
-    { "source": "/miami", "destination": "/city.html?country=usa&city=miami", "statusCode": 301 },
-    { "source": "/new-york", "destination": "/city.html?country=usa&city=new-york", "statusCode": 301 },
-    { "source": "/los-angeles", "destination": "/city.html?country=usa&city=los-angeles", "statusCode": 301 },
-    { "source": "/codigos-postales", "destination": "/", "statusCode": 301 },
-    { "source": "/codigo-postal", "destination": "/", "statusCode": 301 },
-    { "source": "/zip-codes", "destination": "/", "statusCode": 301 },
-    { "source": "/postal-codes", "destination": "/", "statusCode": 301 }
   ]
 }
