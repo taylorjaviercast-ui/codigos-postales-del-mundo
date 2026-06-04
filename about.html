@@ -63,18 +63,13 @@
       <div class="info-grid mt-4">
         <div class="info-card">
           <div class="card-icon">👨‍💻</div>
-          <h3>Carlos Mendoza R.</h3>
-          <p><strong>Director de Datos y Fundador.</strong> Ingeniero en Sistemas con 12 años de experiencia en sistemas de información geográfica (GIS) y bases de datos postales. Anteriormente consultor para proyectos de modernización postal en Latinoamérica.</p>
-        </div>
-        <div class="info-card">
-          <div class="card-icon">👩‍🔬</div>
-          <h3>Ana Lucía Torres P.</h3>
-          <p><strong>Editora de Contenido y Verificación.</strong> Periodista especializada en fact-checking con experiencia en medios digitales. Se asegura de que cada dato publicado sea preciso, actualizado y citado correctamente.</p>
+          <h3>Miguel Ángel Guerrero Benavides</h3>
+          <p><strong>Fundador y Director del Proyecto.</strong> Apasionado por la tecnología y los datos geográficos, lidera la dirección general del sitio, la recopilación de información postal y la verificación contra fuentes oficiales de cada país.</p>
         </div>
         <div class="info-card">
           <div class="card-icon">👨‍🎨</div>
-          <h3>Miguel Ángel Reyes S.</h3>
-          <p><strong>Diseño UX y Desarrollo Frontend.</strong> Diseñador de experiencia de usuario con enfoque en accesibilidad web (WCAG AA). Responsable de que el sitio sea rápido, intuitivo y usable por todos.</p>
+          <h3>Javier Castillo</h3>
+          <p><strong>Desarrollo Web y Editor de Contenido.</strong> Responsable del desarrollo técnico del sitio, la experiencia de usuario y la redacción del contenido editorial. Trabaja para que cada página sea rápida, accesible y útil.</p>
         </div>
       </div>
 
@@ -92,7 +87,7 @@
       </p>
 
       <p class="mt-4" style="font-size:.88rem;color:var(--color-text-muted)">
-        Última actualización de esta página: marzo 2026.
+        Última actualización de esta página: <span class="auto-fecha"></span>.
       </p>
     </article>
   </main>
@@ -152,5 +147,13 @@
     </div>
   </div>
   <script>if(!localStorage.getItem("cookies-accepted"))document.getElementById("cookie-banner").style.display="block";</script>
+  <script>
+    (function(){
+      var meses=["enero","febrero","marzo","abril","mayo","junio","julio","agosto","septiembre","octubre","noviembre","diciembre"];
+      var h=new Date();
+      var txt=h.getDate()+" de "+meses[h.getMonth()]+" de "+h.getFullYear();
+      document.querySelectorAll(".auto-fecha").forEach(function(el){el.textContent=txt;});
+    })();
+  </script>
 </body>
 </html>
