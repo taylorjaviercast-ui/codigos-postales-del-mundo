@@ -115,7 +115,7 @@
       </p>
 
       <p class="mt-4" style="font-size:.88rem;color:var(--color-text-muted)">
-        Última actualización de esta página: marzo 2026.
+        Última actualización de esta página: <span class="auto-fecha"></span>.
       </p>
     </article>
   </main>
@@ -175,5 +175,13 @@
     </div>
   </div>
   <script>if(!localStorage.getItem("cookies-accepted"))document.getElementById("cookie-banner").style.display="block";</script>
+  <script>
+    (function(){
+      var meses=["enero","febrero","marzo","abril","mayo","junio","julio","agosto","septiembre","octubre","noviembre","diciembre"];
+      var h=new Date();
+      var txt=h.getDate()+" de "+meses[h.getMonth()]+" de "+h.getFullYear();
+      document.querySelectorAll(".auto-fecha").forEach(function(el){el.textContent=txt;});
+    })();
+  </script>
 </body>
 </html>
