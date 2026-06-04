@@ -50,7 +50,7 @@
 
     <article class="container py-8" style="max-width:800px">
       <h1 class="section-title">Política de Privacidad</h1>
-      <p style="color:var(--color-text-muted);margin-top:0.5rem">Última actualización: 21 de marzo de 2026</p>
+      <p style="color:var(--color-text-muted);margin-top:0.5rem">Última actualización: <span class="auto-fecha"></span></p>
 
       <div style="font-size:1rem;line-height:1.8;margin-top:2rem">
         <p>En <strong>Códigos Postales del Mundo</strong> (en adelante, "el Sitio"), respetamos tu privacidad y nos comprometemos a proteger tus datos personales. Esta política explica qué información recopilamos, cómo la usamos y cuáles son tus derechos.</p>
@@ -146,5 +146,13 @@
     </div>
   </div>
   <script>if(!localStorage.getItem("cookies-accepted"))document.getElementById("cookie-banner").style.display="block";</script>
+  <script>
+    (function(){
+      var meses=["enero","febrero","marzo","abril","mayo","junio","julio","agosto","septiembre","octubre","noviembre","diciembre"];
+      var h=new Date();
+      var txt=h.getDate()+" de "+meses[h.getMonth()]+" de "+h.getFullYear();
+      document.querySelectorAll(".auto-fecha").forEach(function(el){el.textContent=txt;});
+    })();
+  </script>
 </body>
 </html>
