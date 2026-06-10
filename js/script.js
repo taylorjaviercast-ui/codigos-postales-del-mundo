@@ -661,28 +661,28 @@
 
     // Country image map - Unsplash city photos (free, fast, legal)
     const countryImages = {
-      'colombia': 'https://images.unsplash.com/photo-1568632234157-ce7aecd03d0d?w=500&q=75',
-      'mexico': 'https://images.unsplash.com/photo-1518638150340-f706e86654de?w=500&q=75',
-      'espana': 'https://images.unsplash.com/photo-1539037116277-4db20889f2d4?w=500&q=75',
-      'usa': 'https://images.unsplash.com/photo-1534430480872-3498386e7856?w=500&q=75',
-      'argentina': 'https://images.unsplash.com/photo-1612294037637-ec328d0e075e?w=500&q=75',
-      'peru': 'https://images.unsplash.com/photo-1526392060635-9d6019884377?w=500&q=75',
-      'brasil': 'https://images.unsplash.com/photo-1483729558449-99ef09a8c325?w=500&q=75',
-      'chile': 'https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?w=500&q=75',
-      'ecuador': 'https://images.unsplash.com/photo-1614519284500-55f0e3fa61a6?w=500&q=75',
-      'venezuela': 'https://images.unsplash.com/photo-1577587230708-187fdbef4d91?w=500&q=75',
-      'costa-rica': 'https://images.unsplash.com/photo-1580041065738-e72023775cdc?w=500&q=75',
-      'panama': 'https://images.unsplash.com/photo-1565214975484-3cfa9e56f914?w=500&q=75',
-      'guatemala': 'https://images.unsplash.com/photo-1594489428504-5c0c480a15fd?w=500&q=75',
-      'cuba': 'https://images.unsplash.com/photo-1570299437522-25057c93d794?w=500&q=75',
-      'republica-dominicana': 'https://images.unsplash.com/photo-1580237541049-2d715a09486e?w=500&q=75',
-      'puerto-rico': 'https://images.unsplash.com/photo-1579687196544-08ae57ab0be5?w=500&q=75',
-      'uruguay': 'https://images.unsplash.com/photo-1599847987942-82c4708e0383?w=500&q=75',
-      'paraguay': 'https://images.unsplash.com/photo-1609863539625-d1e6bf7935d8?w=500&q=75',
-      'bolivia': 'https://images.unsplash.com/photo-1591378603223-e15b45a81640?w=500&q=75',
-      'honduras': 'https://images.unsplash.com/photo-1578632292335-df3abbb0d586?w=500&q=75',
-      'el-salvador': 'https://images.unsplash.com/photo-1592367580034-db01eb66e823?w=500&q=75',
-      'nicaragua': 'https://images.unsplash.com/photo-1592321675774-3de57a750857?w=500&q=75'
+      'colombia': 'https://images.unsplash.com/photo-1568632234157-ce7aecd03d0d?w=400&q=68',
+      'mexico': 'https://images.unsplash.com/photo-1518638150340-f706e86654de?w=400&q=68',
+      'espana': 'https://images.unsplash.com/photo-1539037116277-4db20889f2d4?w=400&q=68',
+      'usa': 'https://images.unsplash.com/photo-1534430480872-3498386e7856?w=400&q=68',
+      'argentina': 'https://images.unsplash.com/photo-1612294037637-ec328d0e075e?w=400&q=68',
+      'peru': 'https://images.unsplash.com/photo-1526392060635-9d6019884377?w=400&q=68',
+      'brasil': 'https://images.unsplash.com/photo-1483729558449-99ef09a8c325?w=400&q=68',
+      'chile': 'https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?w=400&q=68',
+      'ecuador': 'https://images.unsplash.com/photo-1614519284500-55f0e3fa61a6?w=400&q=68',
+      'venezuela': 'https://images.unsplash.com/photo-1577587230708-187fdbef4d91?w=400&q=68',
+      'costa-rica': 'https://images.unsplash.com/photo-1580041065738-e72023775cdc?w=400&q=68',
+      'panama': 'https://images.unsplash.com/photo-1565214975484-3cfa9e56f914?w=400&q=68',
+      'guatemala': 'https://images.unsplash.com/photo-1594489428504-5c0c480a15fd?w=400&q=68',
+      'cuba': 'https://images.unsplash.com/photo-1570299437522-25057c93d794?w=400&q=68',
+      'republica-dominicana': 'https://images.unsplash.com/photo-1580237541049-2d715a09486e?w=400&q=68',
+      'puerto-rico': 'https://images.unsplash.com/photo-1579687196544-08ae57ab0be5?w=400&q=68',
+      'uruguay': 'https://images.unsplash.com/photo-1599847987942-82c4708e0383?w=400&q=68',
+      'paraguay': 'https://images.unsplash.com/photo-1609863539625-d1e6bf7935d8?w=400&q=68',
+      'bolivia': 'https://images.unsplash.com/photo-1591378603223-e15b45a81640?w=400&q=68',
+      'honduras': 'https://images.unsplash.com/photo-1578632292335-df3abbb0d586?w=400&q=68',
+      'el-salvador': 'https://images.unsplash.com/photo-1592367580034-db01eb66e823?w=400&q=68',
+      'nicaragua': 'https://images.unsplash.com/photo-1592321675774-3de57a750857?w=400&q=68'
     };
 
     grid.className = 'countries-image-grid';
@@ -691,7 +691,7 @@
       const delay = Math.min(i * 0.06, 1.2);
       return `
         <a href="country.html?id=${c.id}" class="country-image-card" style="animation-delay:${delay}s" aria-label="Ver códigos postales de ${c.name}">
-          <div class="country-img-bg" ${img ? `style="background-image:url('${img}')"` : ''}>
+          <div class="country-img-bg" ${img ? `data-bg="${img}"` : ''}>
             <div class="country-img-overlay"></div>
             <div class="country-img-content">
               <span class="country-img-flag">${c.flag}</span>
@@ -707,6 +707,29 @@
         </a>
       `;
     }).join('');
+
+    // Lazy load de imágenes de fondo (mejora velocidad)
+    (function(){
+      var lazyBgs = grid.querySelectorAll('.country-img-bg[data-bg]');
+      if ('IntersectionObserver' in window) {
+        var obs = new IntersectionObserver(function(entries){
+          entries.forEach(function(entry){
+            if (entry.isIntersecting) {
+              var el = entry.target;
+              el.style.backgroundImage = "url('" + el.getAttribute('data-bg') + "')";
+              el.removeAttribute('data-bg');
+              obs.unobserve(el);
+            }
+          });
+        }, { rootMargin: '200px' });
+        lazyBgs.forEach(function(el){ obs.observe(el); });
+      } else {
+        // Fallback navegadores viejos: cargar de inmediato
+        lazyBgs.forEach(function(el){
+          el.style.backgroundImage = "url('" + el.getAttribute('data-bg') + "')";
+        });
+      }
+    })();
 
     // Init search
     initSearch();
