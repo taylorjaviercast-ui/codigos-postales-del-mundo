@@ -1,0 +1,266 @@
+{
+ "state": "Francisco Morazán",
+ "stateKey": "francisco-morazan",
+ "cities": [
+  {
+   "cityId": "tegucigalpa",
+   "cityName": "Tegucigalpa",
+   "state": "Francisco Morazán",
+   "totalBarrios": 36,
+   "zones": [
+    {
+     "name": "Centro Histórico",
+     "postalCode": "11101",
+     "localidad": "Tegucigalpa",
+     "lat": 14.102,
+     "lng": -87.2043
+    },
+    {
+     "name": "Barrio Abajo",
+     "postalCode": "11101",
+     "localidad": "Tegucigalpa",
+     "lat": 14.1049,
+     "lng": -87.2028
+    },
+    {
+     "name": "Barrio La Hoya",
+     "postalCode": "11101",
+     "localidad": "Tegucigalpa",
+     "lat": 14.1035,
+     "lng": -87.201
+    },
+    {
+     "name": "Barrio Guanacaste",
+     "postalCode": "11101",
+     "localidad": "Tegucigalpa",
+     "lat": 14.108,
+     "lng": -87.1995
+    },
+    {
+     "name": "Barrio Morazán",
+     "postalCode": "11101",
+     "localidad": "Tegucigalpa",
+     "lat": 14.111,
+     "lng": -87.195
+    },
+    {
+     "name": "Barrio La Leona",
+     "postalCode": "11101",
+     "localidad": "Tegucigalpa",
+     "lat": 14.1005,
+     "lng": -87.2065
+    },
+    {
+     "name": "Barrio Buenos Aires",
+     "postalCode": "11101",
+     "localidad": "Tegucigalpa",
+     "lat": 14.099,
+     "lng": -87.209
+    },
+    {
+     "name": "Barrio La Plazuela",
+     "postalCode": "11101",
+     "localidad": "Tegucigalpa",
+     "lat": 14.0985,
+     "lng": -87.203
+    },
+    {
+     "name": "Colonia Palmira",
+     "postalCode": "11101",
+     "localidad": "Tegucigalpa",
+     "lat": 14.095,
+     "lng": -87.1935
+    },
+    {
+     "name": "Lomas del Guijarro",
+     "postalCode": "11101",
+     "localidad": "Tegucigalpa",
+     "lat": 14.0895,
+     "lng": -87.183
+    },
+    {
+     "name": "Colonia Tepeyac",
+     "postalCode": "11101",
+     "localidad": "Tegucigalpa",
+     "lat": 14.087,
+     "lng": -87.19
+    },
+    {
+     "name": "Colonia Miraflores",
+     "postalCode": "11101",
+     "localidad": "Tegucigalpa",
+     "lat": 14.076,
+     "lng": -87.183
+    },
+    {
+     "name": "Colonia Kennedy",
+     "postalCode": "11101",
+     "localidad": "Tegucigalpa",
+     "lat": 14.068,
+     "lng": -87.175
+    },
+    {
+     "name": "Colonia Alameda",
+     "postalCode": "11101",
+     "localidad": "Tegucigalpa",
+     "lat": 14.088,
+     "lng": -87.197
+    },
+    {
+     "name": "Colonia Florencia Norte",
+     "postalCode": "11101",
+     "localidad": "Tegucigalpa",
+     "lat": 14.083,
+     "lng": -87.178
+    },
+    {
+     "name": "Colonia Florencia Sur",
+     "postalCode": "11101",
+     "localidad": "Tegucigalpa",
+     "lat": 14.08,
+     "lng": -87.177
+    },
+    {
+     "name": "Colonia El Prado",
+     "postalCode": "11101",
+     "localidad": "Tegucigalpa",
+     "lat": 14.074,
+     "lng": -87.199
+    },
+    {
+     "name": "Colonia Las Minitas",
+     "postalCode": "11101",
+     "localidad": "Tegucigalpa",
+     "lat": 14.092,
+     "lng": -87.188
+    },
+    {
+     "name": "Colonia Loma Linda",
+     "postalCode": "11101",
+     "localidad": "Tegucigalpa",
+     "lat": 14.08,
+     "lng": -87.188
+    },
+    {
+     "name": "Colonia Miramontes",
+     "postalCode": "11101",
+     "localidad": "Tegucigalpa",
+     "lat": 14.085,
+     "lng": -87.193
+    },
+    {
+     "name": "Colonia El Hato de Enmedio",
+     "postalCode": "11101",
+     "localidad": "Tegucigalpa",
+     "lat": 14.062,
+     "lng": -87.188
+    },
+    {
+     "name": "Colonia La Vega",
+     "postalCode": "11101",
+     "localidad": "Tegucigalpa",
+     "lat": 14.089,
+     "lng": -87.21
+    },
+    {
+     "name": "Residencial Las Hadas",
+     "postalCode": "11101",
+     "localidad": "Tegucigalpa",
+     "lat": 14.07,
+     "lng": -87.19
+    },
+    {
+     "name": "Colonia Villa Olímpica",
+     "postalCode": "11101",
+     "localidad": "Tegucigalpa",
+     "lat": 14.066,
+     "lng": -87.168
+    },
+    {
+     "name": "Barrio Concepción",
+     "postalCode": "12101",
+     "localidad": "Comayagüela",
+     "lat": 14.098,
+     "lng": -87.217
+    },
+    {
+     "name": "Barrio Belén",
+     "postalCode": "12101",
+     "localidad": "Comayagüela",
+     "lat": 14.094,
+     "lng": -87.221
+    },
+    {
+     "name": "Barrio La Bolsa",
+     "postalCode": "12101",
+     "localidad": "Comayagüela",
+     "lat": 14.101,
+     "lng": -87.219
+    },
+    {
+     "name": "Colonia El Carrizal",
+     "postalCode": "12101",
+     "localidad": "Comayagüela",
+     "lat": 14.108,
+     "lng": -87.228
+    },
+    {
+     "name": "Colonia La Granja",
+     "postalCode": "12101",
+     "localidad": "Comayagüela",
+     "lat": 14.083,
+     "lng": -87.223
+    },
+    {
+     "name": "Colonia Cerro Grande",
+     "postalCode": "12101",
+     "localidad": "Comayagüela",
+     "lat": 14.115,
+     "lng": -87.232
+    },
+    {
+     "name": "Colonia Villa Adela",
+     "postalCode": "12101",
+     "localidad": "Comayagüela",
+     "lat": 14.09,
+     "lng": -87.226
+    },
+    {
+     "name": "Colonia San Francisco",
+     "postalCode": "12101",
+     "localidad": "Comayagüela",
+     "lat": 14.087,
+     "lng": -87.23
+    },
+    {
+     "name": "Colonia Satélite",
+     "postalCode": "12101",
+     "localidad": "Comayagüela",
+     "lat": 14.079,
+     "lng": -87.238
+    },
+    {
+     "name": "Barrio Villa Adela Sur",
+     "postalCode": "12101",
+     "localidad": "Comayagüela",
+     "lat": 14.086,
+     "lng": -87.225
+    },
+    {
+     "name": "Colonia Las Torres",
+     "postalCode": "12101",
+     "localidad": "Comayagüela",
+     "lat": 14.112,
+     "lng": -87.225
+    },
+    {
+     "name": "Mercados de Comayagüela",
+     "postalCode": "12101",
+     "localidad": "Comayagüela",
+     "lat": 14.096,
+     "lng": -87.215
+    }
+   ]
+  }
+ ]
+}
