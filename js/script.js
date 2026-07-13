@@ -43,7 +43,7 @@
   /* ================================================================
      2. DATA LOADING
      ================================================================ */
-  const DATA_VERSION = '20';
+  const DATA_VERSION = '21';
 
   async function loadData() {
     if (DATA) return DATA;
@@ -1012,7 +1012,7 @@
        Works for Colombia (barrios) and Mexico (colonias)
        ============================================================ */
     const barriosSection = document.getElementById('barrios-section');
-    const isColombiaOrMexico = (countryId === 'colombia' || countryId === 'mexico' || countryId === 'usa');
+    const isColombiaOrMexico = (countryId === 'colombia' || countryId === 'mexico' || countryId === 'usa' || countryId === 'honduras');
     if (barriosSection && isColombiaOrMexico) {
       // Show loading state
       barriosSection.style.display = 'block';
@@ -1029,7 +1029,7 @@
       // Load barrios/colonias/neighborhoods data asynchronously
       const loadPromise = countryId === 'mexico'
         ? loadColoniasForCity(cityId)
-        : countryId === 'usa'
+        : (countryId === 'usa' || countryId === 'honduras')
           ? loadNeighborhoodsForCity(cityId)
           : loadBarriosForCity(cityId, city.state);
 
@@ -1046,7 +1046,7 @@
           if (stKey && COLONIAS_CACHE[stKey]) {
             addColoniasToSearchIndex(COLONIAS_CACHE[stKey], countryId);
           }
-        } else if (countryId === 'usa') {
+        } else if (countryId === 'usa' || countryId === 'honduras') {
           const stKey = Object.keys(NEIGHBORHOODS_CACHE).find(k => NEIGHBORHOODS_CACHE[k]?.cities?.find(c => c.cityId === cityId));
           if (stKey && NEIGHBORHOODS_CACHE[stKey]) {
             addNeighborhoodsToSearchIndex(NEIGHBORHOODS_CACHE[stKey], countryId);
