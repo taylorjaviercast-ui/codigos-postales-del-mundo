@@ -1,0 +1,614 @@
+{
+ "state": "São Paulo",
+ "stateKey": "sao-paulo-sp",
+ "cities": [
+  {
+   "cityId": "sao-paulo",
+   "cityName": "São Paulo",
+   "state": "São Paulo",
+   "totalBarrios": 75,
+   "zones": [
+    {
+     "name": "Sé (Centro Histórico)",
+     "postalCode": "01001-000",
+     "localidad": "São Paulo",
+     "postalRange": "01000-000 – 01099-999",
+     "lat": -23.5505,
+     "lng": -46.6333
+    },
+    {
+     "name": "República",
+     "postalCode": "01040-000",
+     "localidad": "São Paulo",
+     "postalRange": "01000-000 – 01099-999",
+     "lat": -23.543,
+     "lng": -46.642
+    },
+    {
+     "name": "Santa Cecília",
+     "postalCode": "01100-000",
+     "localidad": "São Paulo",
+     "postalRange": "01100-000 – 01199-999",
+     "lat": -23.535,
+     "lng": -46.652
+    },
+    {
+     "name": "Campos Elíseos",
+     "postalCode": "01130-000",
+     "localidad": "São Paulo",
+     "postalRange": "01100-000 – 01199-999",
+     "lat": -23.537,
+     "lng": -46.645
+    },
+    {
+     "name": "Vila Buarque",
+     "postalCode": "01200-000",
+     "localidad": "São Paulo",
+     "postalRange": "01200-000 – 01299-999",
+     "lat": -23.543,
+     "lng": -46.648
+    },
+    {
+     "name": "Bela Vista",
+     "postalCode": "01300-000",
+     "localidad": "São Paulo",
+     "postalRange": "01300-000 – 01399-999",
+     "lat": -23.558,
+     "lng": -46.642
+    },
+    {
+     "name": "Avenida Paulista",
+     "postalCode": "01310-000",
+     "localidad": "São Paulo",
+     "postalRange": "01300-000 – 01399-999",
+     "lat": -23.5614,
+     "lng": -46.6558
+    },
+    {
+     "name": "Consolação",
+     "postalCode": "01301-000",
+     "localidad": "São Paulo",
+     "postalRange": "01300-000 – 01399-999",
+     "lat": -23.554,
+     "lng": -46.66
+    },
+    {
+     "name": "Cerqueira César",
+     "postalCode": "01400-000",
+     "localidad": "São Paulo",
+     "postalRange": "01400-000 – 01499-999",
+     "lat": -23.556,
+     "lng": -46.668
+    },
+    {
+     "name": "Jardim Paulista",
+     "postalCode": "01401-000",
+     "localidad": "São Paulo",
+     "postalRange": "01400-000 – 01499-999",
+     "lat": -23.568,
+     "lng": -46.669
+    },
+    {
+     "name": "Jardins",
+     "postalCode": "01410-000",
+     "localidad": "São Paulo",
+     "postalRange": "01400-000 – 01499-999",
+     "lat": -23.565,
+     "lng": -46.672
+    },
+    {
+     "name": "Aclimação",
+     "postalCode": "01530-000",
+     "localidad": "São Paulo",
+     "postalRange": "01500-000 – 01599-999",
+     "lat": -23.575,
+     "lng": -46.632
+    },
+    {
+     "name": "Cambuci",
+     "postalCode": "01520-000",
+     "localidad": "São Paulo",
+     "postalRange": "01500-000 – 01599-999",
+     "lat": -23.562,
+     "lng": -46.622
+    },
+    {
+     "name": "Liberdade",
+     "postalCode": "01500-000",
+     "localidad": "São Paulo",
+     "postalRange": "01500-000 – 01599-999",
+     "lat": -23.559,
+     "lng": -46.635
+    },
+    {
+     "name": "Santana",
+     "postalCode": "02010-000",
+     "localidad": "São Paulo",
+     "postalRange": "02000-000 – 02099-999",
+     "lat": -23.503,
+     "lng": -46.625
+    },
+    {
+     "name": "Tucuruvi",
+     "postalCode": "02250-000",
+     "localidad": "São Paulo",
+     "postalRange": "02200-000 – 02299-999",
+     "lat": -23.478,
+     "lng": -46.603
+    },
+    {
+     "name": "Jaçanã",
+     "postalCode": "02270-000",
+     "localidad": "São Paulo",
+     "postalRange": "02200-000 – 02299-999",
+     "lat": -23.464,
+     "lng": -46.585
+    },
+    {
+     "name": "Tremembé",
+     "postalCode": "02350-000",
+     "localidad": "São Paulo",
+     "postalRange": "02300-000 – 02399-999",
+     "lat": -23.465,
+     "lng": -46.605
+    },
+    {
+     "name": "Mandaqui",
+     "postalCode": "02420-000",
+     "localidad": "São Paulo",
+     "postalRange": "02400-000 – 02499-999",
+     "lat": -23.482,
+     "lng": -46.632
+    },
+    {
+     "name": "Casa Verde",
+     "postalCode": "02510-000",
+     "localidad": "São Paulo",
+     "postalRange": "02500-000 – 02599-999",
+     "lat": -23.51,
+     "lng": -46.662
+    },
+    {
+     "name": "Cachoeirinha",
+     "postalCode": "02610-000",
+     "localidad": "São Paulo",
+     "postalRange": "02600-000 – 02699-999",
+     "lat": -23.483,
+     "lng": -46.654
+    },
+    {
+     "name": "Limão",
+     "postalCode": "02710-000",
+     "localidad": "São Paulo",
+     "postalRange": "02700-000 – 02799-999",
+     "lat": -23.503,
+     "lng": -46.671
+    },
+    {
+     "name": "Brasilândia",
+     "postalCode": "02810-000",
+     "localidad": "São Paulo",
+     "postalRange": "02800-000 – 02899-999",
+     "lat": -23.465,
+     "lng": -46.689
+    },
+    {
+     "name": "Freguesia do Ó",
+     "postalCode": "02910-000",
+     "localidad": "São Paulo",
+     "postalRange": "02900-000 – 02999-999",
+     "lat": -23.5,
+     "lng": -46.696
+    },
+    {
+     "name": "Pirituba",
+     "postalCode": "02910-100",
+     "localidad": "São Paulo",
+     "postalRange": "02900-000 – 02999-999",
+     "lat": -23.489,
+     "lng": -46.729
+    },
+    {
+     "name": "Brás",
+     "postalCode": "03010-000",
+     "localidad": "São Paulo",
+     "postalRange": "03000-000 – 03099-999",
+     "lat": -23.539,
+     "lng": -46.612
+    },
+    {
+     "name": "Belenzinho",
+     "postalCode": "03050-000",
+     "localidad": "São Paulo",
+     "postalRange": "03000-000 – 03099-999",
+     "lat": -23.535,
+     "lng": -46.596
+    },
+    {
+     "name": "Pari",
+     "postalCode": "03030-000",
+     "localidad": "São Paulo",
+     "postalRange": "03000-000 – 03099-999",
+     "lat": -23.529,
+     "lng": -46.618
+    },
+    {
+     "name": "Mooca",
+     "postalCode": "03100-000",
+     "localidad": "São Paulo",
+     "postalRange": "03100-000 – 03199-999",
+     "lat": -23.556,
+     "lng": -46.596
+    },
+    {
+     "name": "Tatuapé",
+     "postalCode": "03310-000",
+     "localidad": "São Paulo",
+     "postalRange": "03300-000 – 03399-999",
+     "lat": -23.54,
+     "lng": -46.576
+    },
+    {
+     "name": "Penha",
+     "postalCode": "03600-000",
+     "localidad": "São Paulo",
+     "postalRange": "03600-000 – 03699-999",
+     "lat": -23.525,
+     "lng": -46.542
+    },
+    {
+     "name": "Vila Matilde",
+     "postalCode": "03510-000",
+     "localidad": "São Paulo",
+     "postalRange": "03500-000 – 03599-999",
+     "lat": -23.535,
+     "lng": -46.534
+    },
+    {
+     "name": "São Miguel Paulista",
+     "postalCode": "03910-000",
+     "localidad": "São Paulo",
+     "postalRange": "03900-000 – 03999-999",
+     "lat": -23.498,
+     "lng": -46.444
+    },
+    {
+     "name": "Vila Mariana",
+     "postalCode": "04010-000",
+     "localidad": "São Paulo",
+     "postalRange": "04000-000 – 04099-999",
+     "lat": -23.589,
+     "lng": -46.634
+    },
+    {
+     "name": "Ibirapuera",
+     "postalCode": "04029-000",
+     "localidad": "São Paulo",
+     "postalRange": "04000-000 – 04099-999",
+     "lat": -23.587,
+     "lng": -46.657
+    },
+    {
+     "name": "Saúde",
+     "postalCode": "04150-000",
+     "localidad": "São Paulo",
+     "postalRange": "04100-000 – 04199-999",
+     "lat": -23.618,
+     "lng": -46.639
+    },
+    {
+     "name": "Jabaquara",
+     "postalCode": "04320-000",
+     "localidad": "São Paulo",
+     "postalRange": "04300-000 – 04399-999",
+     "lat": -23.646,
+     "lng": -46.641
+    },
+    {
+     "name": "Moema",
+     "postalCode": "04510-000",
+     "localidad": "São Paulo",
+     "postalRange": "04500-000 – 04599-999",
+     "lat": -23.601,
+     "lng": -46.665
+    },
+    {
+     "name": "Itaim Bibi",
+     "postalCode": "04530-000",
+     "localidad": "São Paulo",
+     "postalRange": "04500-000 – 04599-999",
+     "lat": -23.585,
+     "lng": -46.678
+    },
+    {
+     "name": "Vila Olímpia",
+     "postalCode": "04547-000",
+     "localidad": "São Paulo",
+     "postalRange": "04500-000 – 04599-999",
+     "lat": -23.595,
+     "lng": -46.687
+    },
+    {
+     "name": "Brooklin",
+     "postalCode": "04570-000",
+     "localidad": "São Paulo",
+     "postalRange": "04500-000 – 04599-999",
+     "lat": -23.61,
+     "lng": -46.691
+    },
+    {
+     "name": "Campo Belo",
+     "postalCode": "04610-000",
+     "localidad": "São Paulo",
+     "postalRange": "04600-000 – 04699-999",
+     "lat": -23.622,
+     "lng": -46.671
+    },
+    {
+     "name": "Santo Amaro",
+     "postalCode": "04710-000",
+     "localidad": "São Paulo",
+     "postalRange": "04700-000 – 04799-999",
+     "lat": -23.652,
+     "lng": -46.705
+    },
+    {
+     "name": "Interlagos",
+     "postalCode": "04780-000",
+     "localidad": "São Paulo",
+     "postalRange": "04700-000 – 04799-999",
+     "lat": -23.69,
+     "lng": -46.698
+    },
+    {
+     "name": "Cidade Ademar",
+     "postalCode": "04410-000",
+     "localidad": "São Paulo",
+     "postalRange": "04400-000 – 04499-999",
+     "lat": -23.67,
+     "lng": -46.664
+    },
+    {
+     "name": "Capão Redondo",
+     "postalCode": "05860-000",
+     "localidad": "São Paulo",
+     "postalRange": "05800-000 – 05899-999",
+     "lat": -23.665,
+     "lng": -46.777
+    },
+    {
+     "name": "Pinheiros",
+     "postalCode": "05410-000",
+     "localidad": "São Paulo",
+     "postalRange": "05400-000 – 05499-999",
+     "lat": -23.567,
+     "lng": -46.69
+    },
+    {
+     "name": "Vila Madalena",
+     "postalCode": "05435-000",
+     "localidad": "São Paulo",
+     "postalRange": "05400-000 – 05499-999",
+     "lat": -23.554,
+     "lng": -46.69
+    },
+    {
+     "name": "Butantã",
+     "postalCode": "05500-000",
+     "localidad": "São Paulo",
+     "postalRange": "05500-000 – 05599-999",
+     "lat": -23.571,
+     "lng": -46.718
+    },
+    {
+     "name": "Morumbi",
+     "postalCode": "05650-000",
+     "localidad": "São Paulo",
+     "postalRange": "05600-000 – 05699-999",
+     "lat": -23.6,
+     "lng": -46.722
+    },
+    {
+     "name": "Lapa",
+     "postalCode": "05070-000",
+     "localidad": "São Paulo",
+     "postalRange": "05000-000 – 05099-999",
+     "lat": -23.521,
+     "lng": -46.704
+    },
+    {
+     "name": "Perdizes",
+     "postalCode": "05010-000",
+     "localidad": "São Paulo",
+     "postalRange": "05000-000 – 05099-999",
+     "lat": -23.537,
+     "lng": -46.68
+    },
+    {
+     "name": "Barra Funda",
+     "postalCode": "01140-000",
+     "localidad": "São Paulo",
+     "postalRange": "01100-000 – 01199-999",
+     "lat": -23.525,
+     "lng": -46.665
+    },
+    {
+     "name": "Vila Leopoldina",
+     "postalCode": "05307-000",
+     "localidad": "São Paulo",
+     "postalRange": "05300-000 – 05399-999",
+     "lat": -23.534,
+     "lng": -46.737
+    },
+    {
+     "name": "Itaquera",
+     "postalCode": "08210-000",
+     "localidad": "São Paulo",
+     "postalRange": "08200-000 – 08299-999",
+     "lat": -23.54,
+     "lng": -46.457
+    },
+    {
+     "name": "Guaianases",
+     "postalCode": "08410-000",
+     "localidad": "São Paulo",
+     "postalRange": "08400-000 – 08499-999",
+     "lat": -23.541,
+     "lng": -46.412
+    },
+    {
+     "name": "São Mateus",
+     "postalCode": "03980-000",
+     "localidad": "São Paulo",
+     "postalRange": "03900-000 – 03999-999",
+     "lat": -23.603,
+     "lng": -46.475
+    },
+    {
+     "name": "Sapopemba",
+     "postalCode": "03980-100",
+     "localidad": "São Paulo",
+     "postalRange": "03900-000 – 03999-999",
+     "lat": -23.6,
+     "lng": -46.51
+    },
+    {
+     "name": "Cidade Tiradentes",
+     "postalCode": "08471-000",
+     "localidad": "São Paulo",
+     "postalRange": "08400-000 – 08499-999",
+     "lat": -23.586,
+     "lng": -46.403
+    },
+    {
+     "name": "Vila Prudente",
+     "postalCode": "03130-000",
+     "localidad": "São Paulo",
+     "postalRange": "03100-000 – 03199-999",
+     "lat": -23.583,
+     "lng": -46.582
+    },
+    {
+     "name": "Ipiranga",
+     "postalCode": "04210-000",
+     "localidad": "São Paulo",
+     "postalRange": "04200-000 – 04299-999",
+     "lat": -23.592,
+     "lng": -46.603
+    },
+    {
+     "name": "Parelheiros",
+     "postalCode": "04800-000",
+     "localidad": "São Paulo",
+     "postalRange": "04800-000 – 04899-999",
+     "lat": -23.825,
+     "lng": -46.729
+    },
+    {
+     "name": "Grajaú",
+     "postalCode": "04850-000",
+     "localidad": "São Paulo",
+     "postalRange": "04800-000 – 04899-999",
+     "lat": -23.75,
+     "lng": -46.7
+    },
+    {
+     "name": "M'Boi Mirim",
+     "postalCode": "04900-000",
+     "localidad": "São Paulo",
+     "postalRange": "04900-000 – 04999-999",
+     "lat": -23.69,
+     "lng": -46.745
+    },
+    {
+     "name": "Campo Limpo",
+     "postalCode": "05770-000",
+     "localidad": "São Paulo",
+     "postalRange": "05700-000 – 05799-999",
+     "lat": -23.647,
+     "lng": -46.759
+    },
+    {
+     "name": "Vila Sônia",
+     "postalCode": "05630-000",
+     "localidad": "São Paulo",
+     "postalRange": "05600-000 – 05699-999",
+     "lat": -23.596,
+     "lng": -46.735
+    },
+    {
+     "name": "Rio Pequeno",
+     "postalCode": "05360-000",
+     "localidad": "São Paulo",
+     "postalRange": "05300-000 – 05399-999",
+     "lat": -23.568,
+     "lng": -46.748
+    },
+    {
+     "name": "Perus",
+     "postalCode": "05200-000",
+     "localidad": "São Paulo",
+     "postalRange": "05200-000 – 05299-999",
+     "lat": -23.403,
+     "lng": -46.752
+    },
+    {
+     "name": "Jaraguá",
+     "postalCode": "05160-000",
+     "localidad": "São Paulo",
+     "postalRange": "05100-000 – 05199-999",
+     "lat": -23.456,
+     "lng": -46.744
+    },
+    {
+     "name": "Cangaíba",
+     "postalCode": "03710-000",
+     "localidad": "São Paulo",
+     "postalRange": "03700-000 – 03799-999",
+     "lat": -23.512,
+     "lng": -46.532
+    },
+    {
+     "name": "Ermelino Matarazzo",
+     "postalCode": "03800-000",
+     "localidad": "São Paulo",
+     "postalRange": "03800-000 – 03899-999",
+     "lat": -23.506,
+     "lng": -46.488
+    },
+    {
+     "name": "Vila Formosa",
+     "postalCode": "03350-000",
+     "localidad": "São Paulo",
+     "postalRange": "03300-000 – 03399-999",
+     "lat": -23.568,
+     "lng": -46.545
+    },
+    {
+     "name": "Aricanduva",
+     "postalCode": "03450-000",
+     "localidad": "São Paulo",
+     "postalRange": "03400-000 – 03499-999",
+     "lat": -23.562,
+     "lng": -46.515
+    },
+    {
+     "name": "Água Rasa",
+     "postalCode": "03150-000",
+     "localidad": "São Paulo",
+     "postalRange": "03100-000 – 03199-999",
+     "lat": -23.556,
+     "lng": -46.57
+    },
+    {
+     "name": "Bom Retiro",
+     "postalCode": "01120-000",
+     "localidad": "São Paulo",
+     "postalRange": "01100-000 – 01199-999",
+     "lat": -23.526,
+     "lng": -46.639
+    }
+   ]
+  }
+ ]
+}
