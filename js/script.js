@@ -43,7 +43,7 @@
   /* ================================================================
      2. DATA LOADING
      ================================================================ */
-  const DATA_VERSION = '21';
+  const DATA_VERSION = '22';
 
   async function loadData() {
     if (DATA) return DATA;
@@ -805,8 +805,8 @@
     }
 
     // Page title & meta – optimized for viral keywords
-    document.title = `Códigos Postales de ${country.name} ${country.flag} – Lista Completa y Buscador ${new Date().getFullYear()}`;
-    setMeta('description', `Todos los códigos postales de ${country.name} ${new Date().getFullYear()}. ${country.totalCodes} con buscador gratis, mapa interactivo, barrios y colonias. ¿Cuál es mi código postal en ${country.name}? Encuéntralo aquí.`);
+    document.title = `Códigos Postales de ${country.name} – Lista por Ciudad y Mapa ${new Date().getFullYear()}`;
+    setMeta('description', `Busca el código postal de cualquier ciudad de ${country.name} gratis. ${country.totalCodes} organizados por ciudad, barrio y colonia, con mapa interactivo. Formato: ${country.format || 'oficial'}. Actualizado ${new Date().getFullYear()}.`);
 
     // Breadcrumbs
     setBreadcrumbs([
@@ -908,11 +908,11 @@
     // Page title & meta – enhanced for barrio deep links
     const urlBarrioName = params.get('barrio') ? decodeURIComponent(params.get('barrio')) : null;
     if (urlBarrioName) {
-      document.title = `Código Postal de ${urlBarrioName}, ${city.name} ${country.flag} – CP / ZIP Code ${city.postalCode}`;
-      setMeta('description', `Código postal de ${urlBarrioName} en ${city.name}, ${city.state}, ${country.name}. CP ${city.postalCode}. Busca tu barrio o colonia con mapa interactivo. Find your ZIP code / postal code.`);
+      document.title = `Código Postal de ${urlBarrioName}, ${city.name} – CP ${city.postalCode} | ${country.name}`;
+      setMeta('description', `¿Cuál es el código postal de ${urlBarrioName}, ${city.name}? Es ${city.postalCode}. Consulta la ubicación exacta en el mapa y los barrios cercanos de ${city.state}, ${country.name}. Actualizado ${new Date().getFullYear()}.`);
     } else {
-      document.title = `Código Postal de ${city.name} ${country.flag} – CP ${city.postalCode} | ZIP Code ${new Date().getFullYear()}`;
-      setMeta('description', `El código postal de ${city.name} es ${city.postalCode}. Rango: ${city.postalRange}. Todos los barrios, colonias y zonas postales con mapa. ¿Cuál es mi código postal en ${city.name}? Encuéntralo aquí gratis.`);
+      document.title = `Código Postal de ${city.name}, ${country.name} – CP ${city.postalCode} | Mapa ${new Date().getFullYear()}`;
+      setMeta('description', `¿Cuál es el código postal de ${city.name}? Es ${city.postalCode} (rango ${city.postalRange}). Consulta todos los barrios y zonas postales de ${city.name}, ${country.name}, con mapa interactivo. Actualizado ${new Date().getFullYear()}.`);
     }
 
     // Breadcrumbs
@@ -1012,7 +1012,7 @@
        Works for Colombia (barrios) and Mexico (colonias)
        ============================================================ */
     const barriosSection = document.getElementById('barrios-section');
-    const isColombiaOrMexico = (countryId === 'colombia' || countryId === 'mexico' || countryId === 'usa' || countryId === 'honduras');
+    const isColombiaOrMexico = (countryId === 'colombia' || countryId === 'mexico' || countryId === 'usa' || countryId === 'honduras' || countryId === 'brasil');
     if (barriosSection && isColombiaOrMexico) {
       // Show loading state
       barriosSection.style.display = 'block';
@@ -1029,7 +1029,7 @@
       // Load barrios/colonias/neighborhoods data asynchronously
       const loadPromise = countryId === 'mexico'
         ? loadColoniasForCity(cityId)
-        : (countryId === 'usa' || countryId === 'honduras')
+        : (countryId === 'usa' || countryId === 'honduras' || countryId === 'brasil')
           ? loadNeighborhoodsForCity(cityId)
           : loadBarriosForCity(cityId, city.state);
 
@@ -1046,7 +1046,7 @@
           if (stKey && COLONIAS_CACHE[stKey]) {
             addColoniasToSearchIndex(COLONIAS_CACHE[stKey], countryId);
           }
-        } else if (countryId === 'usa' || countryId === 'honduras') {
+        } else if (countryId === 'usa' || countryId === 'honduras' || countryId === 'brasil') {
           const stKey = Object.keys(NEIGHBORHOODS_CACHE).find(k => NEIGHBORHOODS_CACHE[k]?.cities?.find(c => c.cityId === cityId));
           if (stKey && NEIGHBORHOODS_CACHE[stKey]) {
             addNeighborhoodsToSearchIndex(NEIGHBORHOODS_CACHE[stKey], countryId);
