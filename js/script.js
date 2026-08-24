@@ -43,7 +43,7 @@
   /* ================================================================
      2. DATA LOADING
      ================================================================ */
-  const DATA_VERSION = '22';
+  const DATA_VERSION = '23';
 
   async function loadData() {
     if (DATA) return DATA;
