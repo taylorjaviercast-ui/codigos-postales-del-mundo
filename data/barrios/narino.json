@@ -1,0 +1,527 @@
+{
+ "state": "Nariño",
+ "stateKey": "nariño",
+ "cities": [
+  {
+   "cityId": "pasto",
+   "cityName": "San Juan de Pasto",
+   "state": "Nariño",
+   "totalBarrios": 32,
+   "zones": [
+    {
+     "name": "Centro",
+     "postalCode": "520011",
+     "localidad": "Comuna 1",
+     "lat": 1.2136,
+     "lng": -77.2811
+    },
+    {
+     "name": "Santiago",
+     "postalCode": "520012",
+     "localidad": "Comuna 2",
+     "lat": 1.216,
+     "lng": -77.285
+    },
+    {
+     "name": "Obrero",
+     "postalCode": "520021",
+     "localidad": "Comuna 3",
+     "lat": 1.21,
+     "lng": -77.277
+    },
+    {
+     "name": "Lorenzo",
+     "postalCode": "520022",
+     "localidad": "Comuna 4",
+     "lat": 1.208,
+     "lng": -77.273
+    },
+    {
+     "name": "Pandiaco",
+     "postalCode": "520031",
+     "localidad": "Comuna 5",
+     "lat": 1.22,
+     "lng": -77.29
+    },
+    {
+     "name": "Torobajo",
+     "postalCode": "520032",
+     "localidad": "Comuna 6",
+     "lat": 1.225,
+     "lng": -77.294
+    },
+    {
+     "name": "Aranda",
+     "postalCode": "520041",
+     "localidad": "Comuna 7",
+     "lat": 1.205,
+     "lng": -77.268
+    },
+    {
+     "name": "La Aurora",
+     "postalCode": "520001",
+     "localidad": "Centro",
+     "lat": 1.1956,
+     "lng": -77.2951
+    },
+    {
+     "name": "Fátima",
+     "postalCode": "520002",
+     "localidad": "Norte",
+     "lat": 1.2016,
+     "lng": -77.2951
+    },
+    {
+     "name": "Las Cuadras",
+     "postalCode": "520003",
+     "localidad": "Sur",
+     "lat": 1.2076,
+     "lng": -77.2951
+    },
+    {
+     "name": "Panorámica",
+     "postalCode": "520004",
+     "localidad": "Oriente",
+     "lat": 1.2136,
+     "lng": -77.2951
+    },
+    {
+     "name": "Miraflores",
+     "postalCode": "520005",
+     "localidad": "Occidente",
+     "lat": 1.2196,
+     "lng": -77.2951
+    },
+    {
+     "name": "Chapal",
+     "postalCode": "520006",
+     "localidad": "Centro",
+     "lat": 1.2256,
+     "lng": -77.2951
+    },
+    {
+     "name": "San Andresito",
+     "postalCode": "520007",
+     "localidad": "Norte",
+     "lat": 1.2316,
+     "lng": -77.2951
+    },
+    {
+     "name": "Los Rosales",
+     "postalCode": "520008",
+     "localidad": "Sur",
+     "lat": 1.1956,
+     "lng": -77.2881
+    },
+    {
+     "name": "Corazón de Jesús",
+     "postalCode": "520009",
+     "localidad": "Oriente",
+     "lat": 1.2016,
+     "lng": -77.2881
+    },
+    {
+     "name": "Potrerillo",
+     "postalCode": "520010",
+     "localidad": "Occidente",
+     "lat": 1.2076,
+     "lng": -77.2881
+    },
+    {
+     "name": "La Carolina",
+     "postalCode": "520013",
+     "localidad": "Centro",
+     "lat": 1.2136,
+     "lng": -77.2881
+    },
+    {
+     "name": "Villa Flor",
+     "postalCode": "520014",
+     "localidad": "Norte",
+     "lat": 1.2196,
+     "lng": -77.2881
+    },
+    {
+     "name": "El Tejar",
+     "postalCode": "520015",
+     "localidad": "Sur",
+     "lat": 1.2256,
+     "lng": -77.2881
+    },
+    {
+     "name": "Palermo",
+     "postalCode": "520016",
+     "localidad": "Oriente",
+     "lat": 1.2316,
+     "lng": -77.2881
+    },
+    {
+     "name": "Bellavista",
+     "postalCode": "520017",
+     "localidad": "Occidente",
+     "lat": 1.1956,
+     "lng": -77.2811
+    },
+    {
+     "name": "Emilio Botero",
+     "postalCode": "520018",
+     "localidad": "Centro",
+     "lat": 1.2016,
+     "lng": -77.2811
+    },
+    {
+     "name": "Las Acacias",
+     "postalCode": "520019",
+     "localidad": "Norte",
+     "lat": 1.2076,
+     "lng": -77.2811
+    },
+    {
+     "name": "Caicedonia",
+     "postalCode": "520020",
+     "localidad": "Sur",
+     "lat": 1.2136,
+     "lng": -77.2811
+    },
+    {
+     "name": "Bomboná",
+     "postalCode": "520023",
+     "localidad": "Oriente",
+     "lat": 1.2196,
+     "lng": -77.2811
+    },
+    {
+     "name": "Tamasagra",
+     "postalCode": "520024",
+     "localidad": "Occidente",
+     "lat": 1.2256,
+     "lng": -77.2811
+    },
+    {
+     "name": "El Bosque",
+     "postalCode": "520025",
+     "localidad": "Centro",
+     "lat": 1.2316,
+     "lng": -77.2811
+    },
+    {
+     "name": "La Rosa",
+     "postalCode": "520026",
+     "localidad": "Norte",
+     "lat": 1.1956,
+     "lng": -77.2741
+    },
+    {
+     "name": "Juanoy",
+     "postalCode": "520027",
+     "localidad": "Sur",
+     "lat": 1.2016,
+     "lng": -77.2741
+    },
+    {
+     "name": "Sumatambo",
+     "postalCode": "520028",
+     "localidad": "Oriente",
+     "lat": 1.2076,
+     "lng": -77.2741
+    },
+    {
+     "name": "Anganoy",
+     "postalCode": "520029",
+     "localidad": "Occidente",
+     "lat": 1.2136,
+     "lng": -77.2741
+    }
+   ]
+  },
+  {
+   "cityId": "tumaco",
+   "cityName": "Tumaco",
+   "state": "Nariño",
+   "totalBarrios": 20,
+   "zones": [
+    {
+     "name": "Tumaco Centro",
+     "postalCode": "521020",
+     "localidad": "Isla",
+     "lat": 1.7964,
+     "lng": -78.7811
+    },
+    {
+     "name": "El Morro",
+     "postalCode": "521021",
+     "localidad": "Isla",
+     "lat": 1.799,
+     "lng": -78.785
+    },
+    {
+     "name": "Viento Libre",
+     "postalCode": "521022",
+     "localidad": "Continental",
+     "lat": 1.802,
+     "lng": -78.777
+    },
+    {
+     "name": "Ciudadela",
+     "postalCode": "521023",
+     "localidad": "Continental",
+     "lat": 1.805,
+     "lng": -78.774
+    },
+    {
+     "name": "Panamá",
+     "postalCode": "521024",
+     "localidad": "Isla",
+     "lat": 1.794,
+     "lng": -78.783
+    },
+    {
+     "name": "Exporcol",
+     "postalCode": "521025",
+     "localidad": "Continental",
+     "lat": 1.808,
+     "lng": -78.771
+    },
+    {
+     "name": "Nuevo Milenio",
+     "postalCode": "528501",
+     "localidad": "Centro",
+     "lat": 1.7806,
+     "lng": -78.8296
+    },
+    {
+     "name": "La Ciudadela",
+     "postalCode": "528502",
+     "localidad": "Norte",
+     "lat": 1.7866,
+     "lng": -78.8296
+    },
+    {
+     "name": "Bucheli",
+     "postalCode": "528503",
+     "localidad": "Sur",
+     "lat": 1.7926,
+     "lng": -78.8296
+    },
+    {
+     "name": "Pradomar",
+     "postalCode": "528504",
+     "localidad": "Oriente",
+     "lat": 1.7986,
+     "lng": -78.8296
+    },
+    {
+     "name": "Obrero",
+     "postalCode": "528505",
+     "localidad": "Occidente",
+     "lat": 1.8046,
+     "lng": -78.8296
+    },
+    {
+     "name": "Puente del Medio",
+     "postalCode": "528506",
+     "localidad": "Centro",
+     "lat": 1.8106,
+     "lng": -78.8296
+    },
+    {
+     "name": "Once de Noviembre",
+     "postalCode": "528507",
+     "localidad": "Norte",
+     "lat": 1.8166,
+     "lng": -78.8296
+    },
+    {
+     "name": "Union Victoria",
+     "postalCode": "528508",
+     "localidad": "Sur",
+     "lat": 1.7806,
+     "lng": -78.8226
+    },
+    {
+     "name": "Buenos Aires",
+     "postalCode": "528509",
+     "localidad": "Oriente",
+     "lat": 1.7866,
+     "lng": -78.8226
+    },
+    {
+     "name": "La Cordialidad",
+     "postalCode": "528510",
+     "localidad": "Occidente",
+     "lat": 1.7926,
+     "lng": -78.8226
+    },
+    {
+     "name": "San Judas",
+     "postalCode": "528511",
+     "localidad": "Centro",
+     "lat": 1.7986,
+     "lng": -78.8226
+    },
+    {
+     "name": "Nuevo Amanecer",
+     "postalCode": "528512",
+     "localidad": "Norte",
+     "lat": 1.8046,
+     "lng": -78.8226
+    },
+    {
+     "name": "Las Flores",
+     "postalCode": "528513",
+     "localidad": "Sur",
+     "lat": 1.8106,
+     "lng": -78.8226
+    },
+    {
+     "name": "Tres Cruces",
+     "postalCode": "528514",
+     "localidad": "Oriente",
+     "lat": 1.8166,
+     "lng": -78.8226
+    }
+   ]
+  },
+  {
+   "cityId": "ipiales",
+   "cityName": "Ipiales",
+   "state": "Nariño",
+   "totalBarrios": 19,
+   "zones": [
+    {
+     "name": "Centro",
+     "postalCode": "520820",
+     "localidad": "Centro",
+     "lat": 0.8281,
+     "lng": -77.6414
+    },
+    {
+     "name": "Las Lajas",
+     "postalCode": "520821",
+     "localidad": "Norte",
+     "lat": 0.832,
+     "lng": -77.638
+    },
+    {
+     "name": "Los Chilcos",
+     "postalCode": "520822",
+     "localidad": "Sur",
+     "lat": 0.824,
+     "lng": -77.645
+    },
+    {
+     "name": "El Charco",
+     "postalCode": "520823",
+     "localidad": "Oriente",
+     "lat": 0.83,
+     "lng": -77.636
+    },
+    {
+     "name": "Puenes",
+     "postalCode": "520824",
+     "localidad": "Occidente",
+     "lat": 0.826,
+     "lng": -77.648
+    },
+    {
+     "name": "San Felipe",
+     "postalCode": "524501",
+     "localidad": "Centro",
+     "lat": 0.8076,
+     "lng": -77.6584
+    },
+    {
+     "name": "La Cofradía",
+     "postalCode": "524502",
+     "localidad": "Norte",
+     "lat": 0.8136,
+     "lng": -77.6584
+    },
+    {
+     "name": "Panamericano",
+     "postalCode": "524503",
+     "localidad": "Sur",
+     "lat": 0.8196,
+     "lng": -77.6584
+    },
+    {
+     "name": "El Rosario",
+     "postalCode": "524504",
+     "localidad": "Oriente",
+     "lat": 0.8256,
+     "lng": -77.6584
+    },
+    {
+     "name": "Nueva Colombia",
+     "postalCode": "524505",
+     "localidad": "Occidente",
+     "lat": 0.8316,
+     "lng": -77.6584
+    },
+    {
+     "name": "San Vicente",
+     "postalCode": "524506",
+     "localidad": "Centro",
+     "lat": 0.8376,
+     "lng": -77.6584
+    },
+    {
+     "name": "Villa Nueva",
+     "postalCode": "524507",
+     "localidad": "Norte",
+     "lat": 0.8436,
+     "lng": -77.6584
+    },
+    {
+     "name": "Los Andes",
+     "postalCode": "524508",
+     "localidad": "Sur",
+     "lat": 0.8076,
+     "lng": -77.6514
+    },
+    {
+     "name": "Sagrado Corazón",
+     "postalCode": "524509",
+     "localidad": "Oriente",
+     "lat": 0.8136,
+     "lng": -77.6514
+    },
+    {
+     "name": "San Luis",
+     "postalCode": "524510",
+     "localidad": "Occidente",
+     "lat": 0.8196,
+     "lng": -77.6514
+    },
+    {
+     "name": "La Victoria",
+     "postalCode": "524511",
+     "localidad": "Centro",
+     "lat": 0.8256,
+     "lng": -77.6514
+    },
+    {
+     "name": "El Recuerdo",
+     "postalCode": "524512",
+     "localidad": "Norte",
+     "lat": 0.8316,
+     "lng": -77.6514
+    },
+    {
+     "name": "Simón Bolívar",
+     "postalCode": "524513",
+     "localidad": "Sur",
+     "lat": 0.8376,
+     "lng": -77.6514
+    },
+    {
+     "name": "Divino Niño",
+     "postalCode": "524514",
+     "localidad": "Oriente",
+     "lat": 0.8436,
+     "lng": -77.6514
+    }
+   ]
+  }
+ ]
+}
