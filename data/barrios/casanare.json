@@ -1,1 +1,168 @@
-{"state":"Casanare","stateKey":"casanare","cities":[{"cityId":"yopal","cityName":"Yopal","state":"Casanare","totalBarrios":6,"zones":[{"name":"Centro","postalCode":"850001","localidad":"Centro","lat":5.3378,"lng":-72.3959},{"name":"La Campiña","postalCode":"850002","localidad":"Norte","lat":5.343,"lng":-72.392},{"name":"Brisas del Cravo","postalCode":"850003","localidad":"Sur","lat":5.333,"lng":-72.4},{"name":"El Paraíso","postalCode":"850004","localidad":"Oriente","lat":5.341,"lng":-72.389},{"name":"La Esperanza","postalCode":"850005","localidad":"Occidente","lat":5.335,"lng":-72.403},{"name":"San Martín","postalCode":"850006","localidad":"Norte","lat":5.345,"lng":-72.394}]}]}
+{
+ "state": "Casanare",
+ "stateKey": "casanare",
+ "cities": [
+  {
+   "cityId": "yopal",
+   "cityName": "Yopal",
+   "state": "Casanare",
+   "totalBarrios": 22,
+   "zones": [
+    {
+     "name": "Centro",
+     "postalCode": "850001",
+     "localidad": "Centro",
+     "lat": 5.3378,
+     "lng": -72.3959
+    },
+    {
+     "name": "La Campiña",
+     "postalCode": "850002",
+     "localidad": "Norte",
+     "lat": 5.343,
+     "lng": -72.392
+    },
+    {
+     "name": "Brisas del Cravo",
+     "postalCode": "850003",
+     "localidad": "Sur",
+     "lat": 5.333,
+     "lng": -72.4
+    },
+    {
+     "name": "El Paraíso",
+     "postalCode": "850004",
+     "localidad": "Oriente",
+     "lat": 5.341,
+     "lng": -72.389
+    },
+    {
+     "name": "La Esperanza",
+     "postalCode": "850005",
+     "localidad": "Occidente",
+     "lat": 5.335,
+     "lng": -72.403
+    },
+    {
+     "name": "San Martín",
+     "postalCode": "850006",
+     "localidad": "Norte",
+     "lat": 5.345,
+     "lng": -72.394
+    },
+    {
+     "name": "El Triunfo",
+     "postalCode": "850007",
+     "localidad": "Norte",
+     "lat": 5.3258,
+     "lng": -72.4099
+    },
+    {
+     "name": "Villa Rosa",
+     "postalCode": "850008",
+     "localidad": "Oriente",
+     "lat": 5.3378,
+     "lng": -72.4099
+    },
+    {
+     "name": "Provivienda",
+     "postalCode": "850009",
+     "localidad": "Occidente",
+     "lat": 5.3438,
+     "lng": -72.4099
+    },
+    {
+     "name": "Ciudadela La Bendición",
+     "postalCode": "850010",
+     "localidad": "Centro",
+     "lat": 5.3498,
+     "lng": -72.4099
+    },
+    {
+     "name": "El Progreso",
+     "postalCode": "850011",
+     "localidad": "Norte",
+     "lat": 5.3558,
+     "lng": -72.4099
+    },
+    {
+     "name": "Bello Horizonte",
+     "postalCode": "850012",
+     "localidad": "Sur",
+     "lat": 5.3198,
+     "lng": -72.4029
+    },
+    {
+     "name": "Los Helechos",
+     "postalCode": "850013",
+     "localidad": "Oriente",
+     "lat": 5.3258,
+     "lng": -72.4029
+    },
+    {
+     "name": "La Estancia",
+     "postalCode": "850014",
+     "localidad": "Occidente",
+     "lat": 5.3318,
+     "lng": -72.4029
+    },
+    {
+     "name": "Villa María",
+     "postalCode": "850015",
+     "localidad": "Centro",
+     "lat": 5.3378,
+     "lng": -72.4029
+    },
+    {
+     "name": "Nuevo Horizonte",
+     "postalCode": "850016",
+     "localidad": "Norte",
+     "lat": 5.3438,
+     "lng": -72.4029
+    },
+    {
+     "name": "Guadalquivir",
+     "postalCode": "850017",
+     "localidad": "Sur",
+     "lat": 5.3498,
+     "lng": -72.4029
+    },
+    {
+     "name": "Las Américas",
+     "postalCode": "850018",
+     "localidad": "Oriente",
+     "lat": 5.3558,
+     "lng": -72.4029
+    },
+    {
+     "name": "Los Naranjos",
+     "postalCode": "850019",
+     "localidad": "Occidente",
+     "lat": 5.3198,
+     "lng": -72.3959
+    },
+    {
+     "name": "Villa Nidia",
+     "postalCode": "850020",
+     "localidad": "Centro",
+     "lat": 5.3258,
+     "lng": -72.3959
+    },
+    {
+     "name": "San Jorge",
+     "postalCode": "850021",
+     "localidad": "Norte",
+     "lat": 5.3318,
+     "lng": -72.3959
+    },
+    {
+     "name": "Camoruco",
+     "postalCode": "850022",
+     "localidad": "Occidente",
+     "lat": 5.3498,
+     "lng": -72.3959
+    }
+   ]
+  }
+ ]
+}

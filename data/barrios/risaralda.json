@@ -1,1 +1,239 @@
-{"state":"Risaralda","stateKey":"risaralda","cities":[{"cityId":"pereira","cityName":"Pereira","state":"Risaralda","totalBarrios":12,"zones":[{"name":"Centro","postalCode":"660011","localidad":"Comuna Universidad","lat":4.8133,"lng":-75.6961},{"name":"Álamos","postalCode":"660012","localidad":"Comuna Olímpica","lat":4.808,"lng":-75.702},{"name":"Pinares","postalCode":"660021","localidad":"Comuna Universidad","lat":4.806,"lng":-75.691},{"name":"Los Alpes","postalCode":"660022","localidad":"Comuna Boston","lat":4.811,"lng":-75.688},{"name":"Cuba","postalCode":"660031","localidad":"Comuna Cuba","lat":4.819,"lng":-75.721},{"name":"El Poblado (Pereira)","postalCode":"660032","localidad":"Comuna El Poblado","lat":4.825,"lng":-75.715},{"name":"Dosquebradas Centro","postalCode":"661011","localidad":"Dosquebradas","lat":4.835,"lng":-75.671}]},{"cityId":"dosquebradas","cityName":"Dosquebradas","state":"Risaralda","totalBarrios":7,"zones":[{"name":"Dosquebradas Centro","postalCode":"661020","localidad":"Centro","lat":4.8372,"lng":-75.6724},{"name":"La Pradera","postalCode":"661021","localidad":"Norte","lat":4.842,"lng":-75.668},{"name":"Los Molinos","postalCode":"661022","localidad":"Sur","lat":4.833,"lng":-75.676},{"name":"Campestre","postalCode":"661023","localidad":"Oriente","lat":4.839,"lng":-75.665},{"name":"Santiago Londoño","postalCode":"661024","localidad":"Occidente","lat":4.835,"lng":-75.679},{"name":"Villa del Campo","postalCode":"661025","localidad":"Norte","lat":4.844,"lng":-75.67},{"name":"El Balso","postalCode":"661026","localidad":"Sur","lat":4.831,"lng":-75.674}]}]}
+{
+ "state": "Risaralda",
+ "stateKey": "risaralda",
+ "cities": [
+  {
+   "cityId": "pereira",
+   "cityName": "Pereira",
+   "state": "Risaralda",
+   "totalBarrios": 24,
+   "zones": [
+    {
+     "name": "Centro",
+     "postalCode": "660011",
+     "localidad": "Comuna Universidad",
+     "lat": 4.8133,
+     "lng": -75.6961
+    },
+    {
+     "name": "Álamos",
+     "postalCode": "660012",
+     "localidad": "Comuna Olímpica",
+     "lat": 4.808,
+     "lng": -75.702
+    },
+    {
+     "name": "Pinares",
+     "postalCode": "660021",
+     "localidad": "Comuna Universidad",
+     "lat": 4.806,
+     "lng": -75.691
+    },
+    {
+     "name": "Los Alpes",
+     "postalCode": "660022",
+     "localidad": "Comuna Boston",
+     "lat": 4.811,
+     "lng": -75.688
+    },
+    {
+     "name": "Cuba",
+     "postalCode": "660031",
+     "localidad": "Comuna Cuba",
+     "lat": 4.819,
+     "lng": -75.721
+    },
+    {
+     "name": "El Poblado (Pereira)",
+     "postalCode": "660032",
+     "localidad": "Comuna El Poblado",
+     "lat": 4.825,
+     "lng": -75.715
+    },
+    {
+     "name": "Dosquebradas Centro",
+     "postalCode": "661011",
+     "localidad": "Dosquebradas",
+     "lat": 4.835,
+     "lng": -75.671
+    },
+    {
+     "name": "Villa Santana",
+     "postalCode": "660033",
+     "localidad": "Oriente",
+     "lat": 4.8133,
+     "lng": -75.7101
+    },
+    {
+     "name": "Kennedy",
+     "postalCode": "660034",
+     "localidad": "Occidente",
+     "lat": 4.8193,
+     "lng": -75.7101
+    },
+    {
+     "name": "El Poblado",
+     "postalCode": "660035",
+     "localidad": "Centro",
+     "lat": 4.8253,
+     "lng": -75.7101
+    },
+    {
+     "name": "Boston",
+     "postalCode": "660036",
+     "localidad": "Norte",
+     "lat": 4.8313,
+     "lng": -75.7101
+    },
+    {
+     "name": "San Nicolás",
+     "postalCode": "660037",
+     "localidad": "Sur",
+     "lat": 4.7953,
+     "lng": -75.7031
+    },
+    {
+     "name": "El Jardín",
+     "postalCode": "660038",
+     "localidad": "Oriente",
+     "lat": 4.8013,
+     "lng": -75.7031
+    },
+    {
+     "name": "Providencia",
+     "postalCode": "660039",
+     "localidad": "Occidente",
+     "lat": 4.8073,
+     "lng": -75.7031
+    },
+    {
+     "name": "La Villa",
+     "postalCode": "660040",
+     "localidad": "Centro",
+     "lat": 4.8133,
+     "lng": -75.7031
+    },
+    {
+     "name": "Corocito",
+     "postalCode": "660041",
+     "localidad": "Norte",
+     "lat": 4.8193,
+     "lng": -75.7031
+    },
+    {
+     "name": "Belmonte",
+     "postalCode": "660042",
+     "localidad": "Sur",
+     "lat": 4.8253,
+     "lng": -75.7031
+    },
+    {
+     "name": "Los Álamos",
+     "postalCode": "660043",
+     "localidad": "Oriente",
+     "lat": 4.8313,
+     "lng": -75.7031
+    },
+    {
+     "name": "Samaria",
+     "postalCode": "660044",
+     "localidad": "Occidente",
+     "lat": 4.7953,
+     "lng": -75.6961
+    },
+    {
+     "name": "El Dorado",
+     "postalCode": "660045",
+     "localidad": "Centro",
+     "lat": 4.8013,
+     "lng": -75.6961
+    },
+    {
+     "name": "Perla del Otún",
+     "postalCode": "660046",
+     "localidad": "Norte",
+     "lat": 4.8073,
+     "lng": -75.6961
+    },
+    {
+     "name": "La Independencia",
+     "postalCode": "660047",
+     "localidad": "Sur",
+     "lat": 4.8133,
+     "lng": -75.6961
+    },
+    {
+     "name": "Berlín",
+     "postalCode": "660048",
+     "localidad": "Oriente",
+     "lat": 4.8193,
+     "lng": -75.6961
+    },
+    {
+     "name": "San Fernando",
+     "postalCode": "660049",
+     "localidad": "Occidente",
+     "lat": 4.8253,
+     "lng": -75.6961
+    }
+   ]
+  },
+  {
+   "cityId": "dosquebradas",
+   "cityName": "Dosquebradas",
+   "state": "Risaralda",
+   "totalBarrios": 7,
+   "zones": [
+    {
+     "name": "Dosquebradas Centro",
+     "postalCode": "661020",
+     "localidad": "Centro",
+     "lat": 4.8372,
+     "lng": -75.6724
+    },
+    {
+     "name": "La Pradera",
+     "postalCode": "661021",
+     "localidad": "Norte",
+     "lat": 4.842,
+     "lng": -75.668
+    },
+    {
+     "name": "Los Molinos",
+     "postalCode": "661022",
+     "localidad": "Sur",
+     "lat": 4.833,
+     "lng": -75.676
+    },
+    {
+     "name": "Campestre",
+     "postalCode": "661023",
+     "localidad": "Oriente",
+     "lat": 4.839,
+     "lng": -75.665
+    },
+    {
+     "name": "Santiago Londoño",
+     "postalCode": "661024",
+     "localidad": "Occidente",
+     "lat": 4.835,
+     "lng": -75.679
+    },
+    {
+     "name": "Villa del Campo",
+     "postalCode": "661025",
+     "localidad": "Norte",
+     "lat": 4.844,
+     "lng": -75.67
+    },
+    {
+     "name": "El Balso",
+     "postalCode": "661026",
+     "localidad": "Sur",
+     "lat": 4.831,
+     "lng": -75.674
+    }
+   ]
+  }
+ ]
+}

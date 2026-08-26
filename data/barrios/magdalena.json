@@ -1,1 +1,189 @@
-{"state":"Magdalena","stateKey":"magdalena","cities":[{"cityId":"santa-marta","cityName":"Santa Marta","state":"Magdalena","totalBarrios":12,"zones":[{"name":"Centro Histórico","postalCode":"470011","localidad":"Comuna 1","lat":11.2408,"lng":-74.205},{"name":"El Rodadero","postalCode":"470012","localidad":"Comuna 7","lat":11.205,"lng":-74.229},{"name":"Bello Horizonte","postalCode":"470021","localidad":"Comuna 8","lat":11.212,"lng":-74.218},{"name":"Mamatoco","postalCode":"470022","localidad":"Comuna 5","lat":11.228,"lng":-74.188},{"name":"Los Almendros","postalCode":"470031","localidad":"Comuna 2","lat":11.235,"lng":-74.201},{"name":"Bastidas","postalCode":"470032","localidad":"Comuna 3","lat":11.231,"lng":-74.196},{"name":"Gaira","postalCode":"470041","localidad":"Comuna 9","lat":11.189,"lng":-74.232},{"name":"Taganga","postalCode":"470042","localidad":"Comuna 1","lat":11.264,"lng":-74.19}]}]}
+{
+ "state": "Magdalena",
+ "stateKey": "magdalena",
+ "cities": [
+  {
+   "cityId": "santa-marta",
+   "cityName": "Santa Marta",
+   "state": "Magdalena",
+   "totalBarrios": 25,
+   "zones": [
+    {
+     "name": "Centro Histórico",
+     "postalCode": "470011",
+     "localidad": "Comuna 1",
+     "lat": 11.2408,
+     "lng": -74.205
+    },
+    {
+     "name": "El Rodadero",
+     "postalCode": "470012",
+     "localidad": "Comuna 7",
+     "lat": 11.205,
+     "lng": -74.229
+    },
+    {
+     "name": "Bello Horizonte",
+     "postalCode": "470021",
+     "localidad": "Comuna 8",
+     "lat": 11.212,
+     "lng": -74.218
+    },
+    {
+     "name": "Mamatoco",
+     "postalCode": "470022",
+     "localidad": "Comuna 5",
+     "lat": 11.228,
+     "lng": -74.188
+    },
+    {
+     "name": "Los Almendros",
+     "postalCode": "470031",
+     "localidad": "Comuna 2",
+     "lat": 11.235,
+     "lng": -74.201
+    },
+    {
+     "name": "Bastidas",
+     "postalCode": "470032",
+     "localidad": "Comuna 3",
+     "lat": 11.231,
+     "lng": -74.196
+    },
+    {
+     "name": "Gaira",
+     "postalCode": "470041",
+     "localidad": "Comuna 9",
+     "lat": 11.189,
+     "lng": -74.232
+    },
+    {
+     "name": "Taganga",
+     "postalCode": "470042",
+     "localidad": "Comuna 1",
+     "lat": 11.264,
+     "lng": -74.19
+    },
+    {
+     "name": "Pescaíto",
+     "postalCode": "470043",
+     "localidad": "Sur",
+     "lat": 11.2228,
+     "lng": -74.206
+    },
+    {
+     "name": "Manzanares",
+     "postalCode": "470044",
+     "localidad": "Oriente",
+     "lat": 11.2288,
+     "lng": -74.206
+    },
+    {
+     "name": "Los Alcázares",
+     "postalCode": "470045",
+     "localidad": "Occidente",
+     "lat": 11.2348,
+     "lng": -74.206
+    },
+    {
+     "name": "La Concepción",
+     "postalCode": "470046",
+     "localidad": "Centro",
+     "lat": 11.2408,
+     "lng": -74.206
+    },
+    {
+     "name": "María Eugenia",
+     "postalCode": "470047",
+     "localidad": "Norte",
+     "lat": 11.2468,
+     "lng": -74.206
+    },
+    {
+     "name": "El Pando",
+     "postalCode": "470048",
+     "localidad": "Sur",
+     "lat": 11.2528,
+     "lng": -74.206
+    },
+    {
+     "name": "Jardín",
+     "postalCode": "470049",
+     "localidad": "Oriente",
+     "lat": 11.2588,
+     "lng": -74.206
+    },
+    {
+     "name": "San Fernando",
+     "postalCode": "470050",
+     "localidad": "Occidente",
+     "lat": 11.2228,
+     "lng": -74.199
+    },
+    {
+     "name": "Ciudadela 29 de Julio",
+     "postalCode": "470051",
+     "localidad": "Centro",
+     "lat": 11.2288,
+     "lng": -74.199
+    },
+    {
+     "name": "Curinca",
+     "postalCode": "470052",
+     "localidad": "Norte",
+     "lat": 11.2348,
+     "lng": -74.199
+    },
+    {
+     "name": "Chimila",
+     "postalCode": "470053",
+     "localidad": "Sur",
+     "lat": 11.2408,
+     "lng": -74.199
+    },
+    {
+     "name": "Galicia",
+     "postalCode": "470054",
+     "localidad": "Oriente",
+     "lat": 11.2468,
+     "lng": -74.199
+    },
+    {
+     "name": "Simón Bolívar",
+     "postalCode": "470055",
+     "localidad": "Centro",
+     "lat": 11.2588,
+     "lng": -74.199
+    },
+    {
+     "name": "La Lucha",
+     "postalCode": "470056",
+     "localidad": "Norte",
+     "lat": 11.2228,
+     "lng": -74.192
+    },
+    {
+     "name": "Divino Niño",
+     "postalCode": "470057",
+     "localidad": "Sur",
+     "lat": 11.2288,
+     "lng": -74.192
+    },
+    {
+     "name": "El Parque",
+     "postalCode": "470058",
+     "localidad": "Oriente",
+     "lat": 11.2348,
+     "lng": -74.192
+    },
+    {
+     "name": "Villa Betel",
+     "postalCode": "470059",
+     "localidad": "Occidente",
+     "lat": 11.2408,
+     "lng": -74.192
+    }
+   ]
+  }
+ ]
+}

@@ -1,1 +1,260 @@
-{"state":"La Guajira","stateKey":"la-guajira","cities":[{"cityId":"riohacha","cityName":"Riohacha","state":"La Guajira","totalBarrios":7,"zones":[{"name":"Centro","postalCode":"440001","localidad":"Centro","lat":11.5444,"lng":-72.9072},{"name":"Coquivacoa","postalCode":"440002","localidad":"Norte","lat":11.549,"lng":-72.903},{"name":"José Antonio Galán","postalCode":"440003","localidad":"Sur","lat":11.54,"lng":-72.911},{"name":"Boca Grande","postalCode":"440004","localidad":"Oriente","lat":11.552,"lng":-72.898},{"name":"Marbella","postalCode":"440005","localidad":"Norte","lat":11.547,"lng":-72.905},{"name":"El Progreso","postalCode":"440006","localidad":"Sur","lat":11.538,"lng":-72.914},{"name":"Villa Fátima","postalCode":"440007","localidad":"Occidente","lat":11.542,"lng":-72.916}]},{"cityId":"maicao","cityName":"Maicao","state":"La Guajira","totalBarrios":5,"zones":[{"name":"Centro","postalCode":"440420","localidad":"Centro","lat":11.3825,"lng":-72.241},{"name":"La Sabana","postalCode":"440421","localidad":"Norte","lat":11.387,"lng":-72.237},{"name":"San José","postalCode":"440422","localidad":"Sur","lat":11.378,"lng":-72.245},{"name":"El Bosque","postalCode":"440423","localidad":"Oriente","lat":11.385,"lng":-72.235},{"name":"San Martín","postalCode":"440424","localidad":"Occidente","lat":11.38,"lng":-72.248}]}]}
+{
+ "state": "La Guajira",
+ "stateKey": "la-guajira",
+ "cities": [
+  {
+   "cityId": "riohacha",
+   "cityName": "Riohacha",
+   "state": "La Guajira",
+   "totalBarrios": 29,
+   "zones": [
+    {
+     "name": "Centro",
+     "postalCode": "440001",
+     "localidad": "Centro",
+     "lat": 11.5444,
+     "lng": -72.9072
+    },
+    {
+     "name": "Coquivacoa",
+     "postalCode": "440002",
+     "localidad": "Norte",
+     "lat": 11.549,
+     "lng": -72.903
+    },
+    {
+     "name": "José Antonio Galán",
+     "postalCode": "440003",
+     "localidad": "Sur",
+     "lat": 11.54,
+     "lng": -72.911
+    },
+    {
+     "name": "Boca Grande",
+     "postalCode": "440004",
+     "localidad": "Oriente",
+     "lat": 11.552,
+     "lng": -72.898
+    },
+    {
+     "name": "Marbella",
+     "postalCode": "440005",
+     "localidad": "Norte",
+     "lat": 11.547,
+     "lng": -72.905
+    },
+    {
+     "name": "El Progreso",
+     "postalCode": "440006",
+     "localidad": "Sur",
+     "lat": 11.538,
+     "lng": -72.914
+    },
+    {
+     "name": "Villa Fátima",
+     "postalCode": "440007",
+     "localidad": "Occidente",
+     "lat": 11.542,
+     "lng": -72.916
+    },
+    {
+     "name": "Villa Campo Alegre",
+     "postalCode": "440008",
+     "localidad": "Centro",
+     "lat": 11.5264,
+     "lng": -72.9212
+    },
+    {
+     "name": "El Patrón",
+     "postalCode": "440009",
+     "localidad": "Norte",
+     "lat": 11.5324,
+     "lng": -72.9212
+    },
+    {
+     "name": "Los Olivos",
+     "postalCode": "440010",
+     "localidad": "Sur",
+     "lat": 11.5384,
+     "lng": -72.9212
+    },
+    {
+     "name": "Cooperativo",
+     "postalCode": "440011",
+     "localidad": "Oriente",
+     "lat": 11.5444,
+     "lng": -72.9212
+    },
+    {
+     "name": "12 de Octubre",
+     "postalCode": "440012",
+     "localidad": "Occidente",
+     "lat": 11.5504,
+     "lng": -72.9212
+    },
+    {
+     "name": "La Florida",
+     "postalCode": "440013",
+     "localidad": "Centro",
+     "lat": 11.5564,
+     "lng": -72.9212
+    },
+    {
+     "name": "Nuevo Horizonte",
+     "postalCode": "440014",
+     "localidad": "Norte",
+     "lat": 11.5624,
+     "lng": -72.9212
+    },
+    {
+     "name": "Camilo Torres",
+     "postalCode": "440015",
+     "localidad": "Sur",
+     "lat": 11.5264,
+     "lng": -72.9142
+    },
+    {
+     "name": "Majayura",
+     "postalCode": "440016",
+     "localidad": "Oriente",
+     "lat": 11.5324,
+     "lng": -72.9142
+    },
+    {
+     "name": "Villa Keyla",
+     "postalCode": "440017",
+     "localidad": "Occidente",
+     "lat": 11.5384,
+     "lng": -72.9142
+    },
+    {
+     "name": "Ciudadela Universitaria",
+     "postalCode": "440018",
+     "localidad": "Centro",
+     "lat": 11.5444,
+     "lng": -72.9142
+    },
+    {
+     "name": "El Dividivi",
+     "postalCode": "440019",
+     "localidad": "Norte",
+     "lat": 11.5504,
+     "lng": -72.9142
+    },
+    {
+     "name": "Los Deseos",
+     "postalCode": "440020",
+     "localidad": "Sur",
+     "lat": 11.5564,
+     "lng": -72.9142
+    },
+    {
+     "name": "San Francisco",
+     "postalCode": "440021",
+     "localidad": "Oriente",
+     "lat": 11.5624,
+     "lng": -72.9142
+    },
+    {
+     "name": "Simón Bolívar",
+     "postalCode": "440022",
+     "localidad": "Occidente",
+     "lat": 11.5264,
+     "lng": -72.9072
+    },
+    {
+     "name": "El Carmen",
+     "postalCode": "440023",
+     "localidad": "Centro",
+     "lat": 11.5324,
+     "lng": -72.9072
+    },
+    {
+     "name": "Buenos Aires",
+     "postalCode": "440024",
+     "localidad": "Norte",
+     "lat": 11.5384,
+     "lng": -72.9072
+    },
+    {
+     "name": "Villa Sharon",
+     "postalCode": "440025",
+     "localidad": "Sur",
+     "lat": 11.5444,
+     "lng": -72.9072
+    },
+    {
+     "name": "Nuestra Señora de los Remedios",
+     "postalCode": "440026",
+     "localidad": "Oriente",
+     "lat": 11.5504,
+     "lng": -72.9072
+    },
+    {
+     "name": "Almirante Padilla",
+     "postalCode": "440027",
+     "localidad": "Occidente",
+     "lat": 11.5564,
+     "lng": -72.9072
+    },
+    {
+     "name": "La Esperanza",
+     "postalCode": "440028",
+     "localidad": "Centro",
+     "lat": 11.5624,
+     "lng": -72.9072
+    },
+    {
+     "name": "Aeropuerto",
+     "postalCode": "440029",
+     "localidad": "Norte",
+     "lat": 11.5264,
+     "lng": -72.9002
+    }
+   ]
+  },
+  {
+   "cityId": "maicao",
+   "cityName": "Maicao",
+   "state": "La Guajira",
+   "totalBarrios": 5,
+   "zones": [
+    {
+     "name": "Centro",
+     "postalCode": "440420",
+     "localidad": "Centro",
+     "lat": 11.3825,
+     "lng": -72.241
+    },
+    {
+     "name": "La Sabana",
+     "postalCode": "440421",
+     "localidad": "Norte",
+     "lat": 11.387,
+     "lng": -72.237
+    },
+    {
+     "name": "San José",
+     "postalCode": "440422",
+     "localidad": "Sur",
+     "lat": 11.378,
+     "lng": -72.245
+    },
+    {
+     "name": "El Bosque",
+     "postalCode": "440423",
+     "localidad": "Oriente",
+     "lat": 11.385,
+     "lng": -72.235
+    },
+    {
+     "name": "San Martín",
+     "postalCode": "440424",
+     "localidad": "Occidente",
+     "lat": 11.38,
+     "lng": -72.248
+    }
+   ]
+  }
+ ]
+}

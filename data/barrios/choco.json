@@ -1,1 +1,168 @@
-{"state":"Chocó","stateKey":"choco","cities":[{"cityId":"quibdo","cityName":"Quibdó","state":"Chocó","totalBarrios":6,"zones":[{"name":"Centro","postalCode":"270001","localidad":"Centro","lat":5.6919,"lng":-76.6583},{"name":"Niño Jesús","postalCode":"270002","localidad":"Norte","lat":5.696,"lng":-76.655},{"name":"Las Américas","postalCode":"270003","localidad":"Sur","lat":5.688,"lng":-76.662},{"name":"Huapango","postalCode":"270004","localidad":"Oriente","lat":5.694,"lng":-76.652},{"name":"Samper","postalCode":"270005","localidad":"Occidente","lat":5.69,"lng":-76.665},{"name":"El Silencio","postalCode":"270006","localidad":"Norte","lat":5.698,"lng":-76.654}]}]}
+{
+ "state": "Chocó",
+ "stateKey": "choco",
+ "cities": [
+  {
+   "cityId": "quibdo",
+   "cityName": "Quibdó",
+   "state": "Chocó",
+   "totalBarrios": 22,
+   "zones": [
+    {
+     "name": "Centro",
+     "postalCode": "270001",
+     "localidad": "Centro",
+     "lat": 5.6919,
+     "lng": -76.6583
+    },
+    {
+     "name": "Niño Jesús",
+     "postalCode": "270002",
+     "localidad": "Norte",
+     "lat": 5.696,
+     "lng": -76.655
+    },
+    {
+     "name": "Las Américas",
+     "postalCode": "270003",
+     "localidad": "Sur",
+     "lat": 5.688,
+     "lng": -76.662
+    },
+    {
+     "name": "Huapango",
+     "postalCode": "270004",
+     "localidad": "Oriente",
+     "lat": 5.694,
+     "lng": -76.652
+    },
+    {
+     "name": "Samper",
+     "postalCode": "270005",
+     "localidad": "Occidente",
+     "lat": 5.69,
+     "lng": -76.665
+    },
+    {
+     "name": "El Silencio",
+     "postalCode": "270006",
+     "localidad": "Norte",
+     "lat": 5.698,
+     "lng": -76.654
+    },
+    {
+     "name": "Yesquita",
+     "postalCode": "270007",
+     "localidad": "Norte",
+     "lat": 5.6827,
+     "lng": -76.6751
+    },
+    {
+     "name": "César Conto",
+     "postalCode": "270008",
+     "localidad": "Sur",
+     "lat": 5.6887,
+     "lng": -76.6751
+    },
+    {
+     "name": "Roma",
+     "postalCode": "270009",
+     "localidad": "Oriente",
+     "lat": 5.6947,
+     "lng": -76.6751
+    },
+    {
+     "name": "La Yesca",
+     "postalCode": "270010",
+     "localidad": "Occidente",
+     "lat": 5.7007,
+     "lng": -76.6751
+    },
+    {
+     "name": "Kennedy",
+     "postalCode": "270011",
+     "localidad": "Centro",
+     "lat": 5.7067,
+     "lng": -76.6751
+    },
+    {
+     "name": "Las Margaritas",
+     "postalCode": "270012",
+     "localidad": "Sur",
+     "lat": 5.6767,
+     "lng": -76.6681
+    },
+    {
+     "name": "Obrero",
+     "postalCode": "270013",
+     "localidad": "Oriente",
+     "lat": 5.6827,
+     "lng": -76.6681
+    },
+    {
+     "name": "Cristo Rey",
+     "postalCode": "270014",
+     "localidad": "Occidente",
+     "lat": 5.6887,
+     "lng": -76.6681
+    },
+    {
+     "name": "Reposo",
+     "postalCode": "270015",
+     "localidad": "Sur",
+     "lat": 5.7067,
+     "lng": -76.6681
+    },
+    {
+     "name": "San Vicente",
+     "postalCode": "270016",
+     "localidad": "Oriente",
+     "lat": 5.7127,
+     "lng": -76.6681
+    },
+    {
+     "name": "La Aurora",
+     "postalCode": "270017",
+     "localidad": "Occidente",
+     "lat": 5.6767,
+     "lng": -76.6611
+    },
+    {
+     "name": "Los Álamos",
+     "postalCode": "270018",
+     "localidad": "Centro",
+     "lat": 5.6827,
+     "lng": -76.6611
+    },
+    {
+     "name": "Zona Minera",
+     "postalCode": "270019",
+     "localidad": "Norte",
+     "lat": 5.6887,
+     "lng": -76.6611
+    },
+    {
+     "name": "Alameda Reyes",
+     "postalCode": "270020",
+     "localidad": "Sur",
+     "lat": 5.6947,
+     "lng": -76.6611
+    },
+    {
+     "name": "Playita",
+     "postalCode": "270021",
+     "localidad": "Oriente",
+     "lat": 5.7007,
+     "lng": -76.6611
+    },
+    {
+     "name": "El Futuro",
+     "postalCode": "270022",
+     "localidad": "Occidente",
+     "lat": 5.7067,
+     "lng": -76.6611
+    }
+   ]
+  }
+ ]
+}

@@ -1,1 +1,154 @@
-{"state":"Caquetá","stateKey":"caqueta","cities":[{"cityId":"florencia","cityName":"Florencia","state":"Caquetá","totalBarrios":6,"zones":[{"name":"Centro","postalCode":"180001","localidad":"Centro","lat":1.6144,"lng":-75.6062},{"name":"La Vega","postalCode":"180002","localidad":"Norte","lat":1.619,"lng":-75.602},{"name":"Torasso","postalCode":"180003","localidad":"Sur","lat":1.61,"lng":-75.61},{"name":"Juan XXIII","postalCode":"180004","localidad":"Oriente","lat":1.617,"lng":-75.599},{"name":"Los Alpes","postalCode":"180005","localidad":"Occidente","lat":1.612,"lng":-75.613},{"name":"Ciudadela Siglo XXI","postalCode":"180006","localidad":"Sur","lat":1.608,"lng":-75.608}]}]}
+{
+ "state": "Caquetá",
+ "stateKey": "caqueta",
+ "cities": [
+  {
+   "cityId": "florencia",
+   "cityName": "Florencia",
+   "state": "Caquetá",
+   "totalBarrios": 20,
+   "zones": [
+    {
+     "name": "Centro",
+     "postalCode": "180001",
+     "localidad": "Centro",
+     "lat": 1.6144,
+     "lng": -75.6062
+    },
+    {
+     "name": "La Vega",
+     "postalCode": "180002",
+     "localidad": "Norte",
+     "lat": 1.619,
+     "lng": -75.602
+    },
+    {
+     "name": "Torasso",
+     "postalCode": "180003",
+     "localidad": "Sur",
+     "lat": 1.61,
+     "lng": -75.61
+    },
+    {
+     "name": "Juan XXIII",
+     "postalCode": "180004",
+     "localidad": "Oriente",
+     "lat": 1.617,
+     "lng": -75.599
+    },
+    {
+     "name": "Los Alpes",
+     "postalCode": "180005",
+     "localidad": "Occidente",
+     "lat": 1.612,
+     "lng": -75.613
+    },
+    {
+     "name": "Ciudadela Siglo XXI",
+     "postalCode": "180006",
+     "localidad": "Sur",
+     "lat": 1.608,
+     "lng": -75.608
+    },
+    {
+     "name": "Las Malvinas",
+     "postalCode": "180007",
+     "localidad": "Norte",
+     "lat": 1.6024,
+     "lng": -75.6202
+    },
+    {
+     "name": "Buenos Aires",
+     "postalCode": "180008",
+     "localidad": "Sur",
+     "lat": 1.6084,
+     "lng": -75.6202
+    },
+    {
+     "name": "El Timmy",
+     "postalCode": "180009",
+     "localidad": "Occidente",
+     "lat": 1.6204,
+     "lng": -75.6202
+    },
+    {
+     "name": "La Consolata",
+     "postalCode": "180010",
+     "localidad": "Norte",
+     "lat": 1.6324,
+     "lng": -75.6202
+    },
+    {
+     "name": "Versalles",
+     "postalCode": "180011",
+     "localidad": "Sur",
+     "lat": 1.5964,
+     "lng": -75.6132
+    },
+    {
+     "name": "El Raicero",
+     "postalCode": "180012",
+     "localidad": "Centro",
+     "lat": 1.6144,
+     "lng": -75.6132
+    },
+    {
+     "name": "Bello Horizonte",
+     "postalCode": "180013",
+     "localidad": "Sur",
+     "lat": 1.6264,
+     "lng": -75.6132
+    },
+    {
+     "name": "Las Palmeras",
+     "postalCode": "180014",
+     "localidad": "Oriente",
+     "lat": 1.6324,
+     "lng": -75.6132
+    },
+    {
+     "name": "Yapurá",
+     "postalCode": "180015",
+     "localidad": "Occidente",
+     "lat": 1.5964,
+     "lng": -75.6062
+    },
+    {
+     "name": "El Cunduy",
+     "postalCode": "180016",
+     "localidad": "Centro",
+     "lat": 1.6024,
+     "lng": -75.6062
+    },
+    {
+     "name": "Idema",
+     "postalCode": "180017",
+     "localidad": "Norte",
+     "lat": 1.6084,
+     "lng": -75.6062
+    },
+    {
+     "name": "Los Andes",
+     "postalCode": "180018",
+     "localidad": "Sur",
+     "lat": 1.6144,
+     "lng": -75.6062
+    },
+    {
+     "name": "Nueva Colombia",
+     "postalCode": "180019",
+     "localidad": "Oriente",
+     "lat": 1.6204,
+     "lng": -75.6062
+    },
+    {
+     "name": "Santafé",
+     "postalCode": "180020",
+     "localidad": "Occidente",
+     "lat": 1.6264,
+     "lng": -75.6062
+    }
+   ]
+  }
+ ]
+}

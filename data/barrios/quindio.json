@@ -1,1 +1,210 @@
-{"state":"Quindío","stateKey":"quindio","cities":[{"cityId":"armenia","cityName":"Armenia","state":"Quindío","totalBarrios":8,"zones":[{"name":"Centro","postalCode":"630011","localidad":"Comuna 1","lat":4.5339,"lng":-75.6811},{"name":"Fundadores","postalCode":"630012","localidad":"Comuna 2","lat":4.537,"lng":-75.685},{"name":"La Castellana","postalCode":"630021","localidad":"Comuna 3","lat":4.53,"lng":-75.677},{"name":"Mercedes del Norte","postalCode":"630022","localidad":"Comuna 4","lat":4.542,"lng":-75.69},{"name":"Niágara","postalCode":"630031","localidad":"Comuna 5","lat":4.528,"lng":-75.673},{"name":"La Patria","postalCode":"630032","localidad":"Comuna 6","lat":4.54,"lng":-75.688}]}]}
+{
+ "state": "Quindío",
+ "stateKey": "quindio",
+ "cities": [
+  {
+   "cityId": "armenia",
+   "cityName": "Armenia",
+   "state": "Quindío",
+   "totalBarrios": 28,
+   "zones": [
+    {
+     "name": "Centro",
+     "postalCode": "630011",
+     "localidad": "Comuna 1",
+     "lat": 4.5339,
+     "lng": -75.6811
+    },
+    {
+     "name": "Fundadores",
+     "postalCode": "630012",
+     "localidad": "Comuna 2",
+     "lat": 4.537,
+     "lng": -75.685
+    },
+    {
+     "name": "La Castellana",
+     "postalCode": "630021",
+     "localidad": "Comuna 3",
+     "lat": 4.53,
+     "lng": -75.677
+    },
+    {
+     "name": "Mercedes del Norte",
+     "postalCode": "630022",
+     "localidad": "Comuna 4",
+     "lat": 4.542,
+     "lng": -75.69
+    },
+    {
+     "name": "Niágara",
+     "postalCode": "630031",
+     "localidad": "Comuna 5",
+     "lat": 4.528,
+     "lng": -75.673
+    },
+    {
+     "name": "La Patria",
+     "postalCode": "630032",
+     "localidad": "Comuna 6",
+     "lat": 4.54,
+     "lng": -75.688
+    },
+    {
+     "name": "Laureles",
+     "postalCode": "630033",
+     "localidad": "Norte",
+     "lat": 4.5219,
+     "lng": -75.6951
+    },
+    {
+     "name": "Granada",
+     "postalCode": "630034",
+     "localidad": "Oriente",
+     "lat": 4.5339,
+     "lng": -75.6951
+    },
+    {
+     "name": "Providencia",
+     "postalCode": "630035",
+     "localidad": "Occidente",
+     "lat": 4.5399,
+     "lng": -75.6951
+    },
+    {
+     "name": "Nueva Libertad",
+     "postalCode": "630036",
+     "localidad": "Centro",
+     "lat": 4.5459,
+     "lng": -75.6951
+    },
+    {
+     "name": "Cafetero",
+     "postalCode": "630037",
+     "localidad": "Norte",
+     "lat": 4.5519,
+     "lng": -75.6951
+    },
+    {
+     "name": "Bosques de Pinares",
+     "postalCode": "630038",
+     "localidad": "Sur",
+     "lat": 4.5159,
+     "lng": -75.6881
+    },
+    {
+     "name": "El Prado",
+     "postalCode": "630039",
+     "localidad": "Oriente",
+     "lat": 4.5219,
+     "lng": -75.6881
+    },
+    {
+     "name": "Uribe",
+     "postalCode": "630040",
+     "localidad": "Occidente",
+     "lat": 4.5279,
+     "lng": -75.6881
+    },
+    {
+     "name": "Corbones",
+     "postalCode": "630041",
+     "localidad": "Norte",
+     "lat": 4.5399,
+     "lng": -75.6881
+    },
+    {
+     "name": "San José",
+     "postalCode": "630042",
+     "localidad": "Sur",
+     "lat": 4.5459,
+     "lng": -75.6881
+    },
+    {
+     "name": "Villa Liliana",
+     "postalCode": "630043",
+     "localidad": "Oriente",
+     "lat": 4.5519,
+     "lng": -75.6881
+    },
+    {
+     "name": "Puerto Espejo",
+     "postalCode": "630044",
+     "localidad": "Occidente",
+     "lat": 4.5159,
+     "lng": -75.6811
+    },
+    {
+     "name": "La Fachada",
+     "postalCode": "630045",
+     "localidad": "Centro",
+     "lat": 4.5219,
+     "lng": -75.6811
+    },
+    {
+     "name": "Los Quindos",
+     "postalCode": "630046",
+     "localidad": "Norte",
+     "lat": 4.5279,
+     "lng": -75.6811
+    },
+    {
+     "name": "Miraflores",
+     "postalCode": "630047",
+     "localidad": "Sur",
+     "lat": 4.5339,
+     "lng": -75.6811
+    },
+    {
+     "name": "Zuldemayda",
+     "postalCode": "630048",
+     "localidad": "Oriente",
+     "lat": 4.5399,
+     "lng": -75.6811
+    },
+    {
+     "name": "La Isabela",
+     "postalCode": "630049",
+     "localidad": "Occidente",
+     "lat": 4.5459,
+     "lng": -75.6811
+    },
+    {
+     "name": "El Paraíso",
+     "postalCode": "630050",
+     "localidad": "Centro",
+     "lat": 4.5519,
+     "lng": -75.6811
+    },
+    {
+     "name": "Ciudad Dorada",
+     "postalCode": "630051",
+     "localidad": "Norte",
+     "lat": 4.5159,
+     "lng": -75.6741
+    },
+    {
+     "name": "La Cecilia",
+     "postalCode": "630052",
+     "localidad": "Sur",
+     "lat": 4.5219,
+     "lng": -75.6741
+    },
+    {
+     "name": "Yulima",
+     "postalCode": "630053",
+     "localidad": "Oriente",
+     "lat": 4.5279,
+     "lng": -75.6741
+    },
+    {
+     "name": "Alfonso López",
+     "postalCode": "630054",
+     "localidad": "Occidente",
+     "lat": 4.5339,
+     "lng": -75.6741
+    }
+   ]
+  }
+ ]
+}

@@ -1,1 +1,210 @@
-{"state":"Meta","stateKey":"meta","cities":[{"cityId":"villavicencio","cityName":"Villavicencio","state":"Meta","totalBarrios":10,"zones":[{"name":"Centro","postalCode":"500011","localidad":"Comuna 1","lat":4.142,"lng":-73.6266},{"name":"Barzal","postalCode":"500012","localidad":"Comuna 4","lat":4.138,"lng":-73.631},{"name":"La Grama","postalCode":"500021","localidad":"Comuna 5","lat":4.134,"lng":-73.635},{"name":"Caudal","postalCode":"500022","localidad":"Comuna 5","lat":4.13,"lng":-73.628},{"name":"El Buque","postalCode":"500031","localidad":"Comuna 3","lat":4.145,"lng":-73.62},{"name":"Porfía","postalCode":"500032","localidad":"Comuna 8","lat":4.118,"lng":-73.609},{"name":"Llano Lindo","postalCode":"500041","localidad":"Comuna 7","lat":4.128,"lng":-73.64}]}]}
+{
+ "state": "Meta",
+ "stateKey": "meta",
+ "cities": [
+  {
+   "cityId": "villavicencio",
+   "cityName": "Villavicencio",
+   "state": "Meta",
+   "totalBarrios": 28,
+   "zones": [
+    {
+     "name": "Centro",
+     "postalCode": "500011",
+     "localidad": "Comuna 1",
+     "lat": 4.142,
+     "lng": -73.6266
+    },
+    {
+     "name": "Barzal",
+     "postalCode": "500012",
+     "localidad": "Comuna 4",
+     "lat": 4.138,
+     "lng": -73.631
+    },
+    {
+     "name": "La Grama",
+     "postalCode": "500021",
+     "localidad": "Comuna 5",
+     "lat": 4.134,
+     "lng": -73.635
+    },
+    {
+     "name": "Caudal",
+     "postalCode": "500022",
+     "localidad": "Comuna 5",
+     "lat": 4.13,
+     "lng": -73.628
+    },
+    {
+     "name": "El Buque",
+     "postalCode": "500031",
+     "localidad": "Comuna 3",
+     "lat": 4.145,
+     "lng": -73.62
+    },
+    {
+     "name": "Porfía",
+     "postalCode": "500032",
+     "localidad": "Comuna 8",
+     "lat": 4.118,
+     "lng": -73.609
+    },
+    {
+     "name": "Llano Lindo",
+     "postalCode": "500041",
+     "localidad": "Comuna 7",
+     "lat": 4.128,
+     "lng": -73.64
+    },
+    {
+     "name": "El Barzal",
+     "postalCode": "500042",
+     "localidad": "Norte",
+     "lat": 4.13,
+     "lng": -73.6406
+    },
+    {
+     "name": "Villa Suárez",
+     "postalCode": "500043",
+     "localidad": "Oriente",
+     "lat": 4.142,
+     "lng": -73.6406
+    },
+    {
+     "name": "Siete de Agosto",
+     "postalCode": "500044",
+     "localidad": "Occidente",
+     "lat": 4.148,
+     "lng": -73.6406
+    },
+    {
+     "name": "La Esperanza",
+     "postalCode": "500045",
+     "localidad": "Norte",
+     "lat": 4.16,
+     "lng": -73.6406
+    },
+    {
+     "name": "Popular",
+     "postalCode": "500046",
+     "localidad": "Oriente",
+     "lat": 4.13,
+     "lng": -73.6336
+    },
+    {
+     "name": "San Isidro",
+     "postalCode": "500047",
+     "localidad": "Occidente",
+     "lat": 4.136,
+     "lng": -73.6336
+    },
+    {
+     "name": "Trece de Mayo",
+     "postalCode": "500048",
+     "localidad": "Centro",
+     "lat": 4.142,
+     "lng": -73.6336
+    },
+    {
+     "name": "Villa Julia",
+     "postalCode": "500049",
+     "localidad": "Norte",
+     "lat": 4.148,
+     "lng": -73.6336
+    },
+    {
+     "name": "Camoa",
+     "postalCode": "500050",
+     "localidad": "Sur",
+     "lat": 4.154,
+     "lng": -73.6336
+    },
+    {
+     "name": "Ciudad Porfía",
+     "postalCode": "500051",
+     "localidad": "Oriente",
+     "lat": 4.16,
+     "lng": -73.6336
+    },
+    {
+     "name": "Los Cambulos",
+     "postalCode": "500052",
+     "localidad": "Occidente",
+     "lat": 4.124,
+     "lng": -73.6266
+    },
+    {
+     "name": "Rosa Blanca",
+     "postalCode": "500053",
+     "localidad": "Centro",
+     "lat": 4.13,
+     "lng": -73.6266
+    },
+    {
+     "name": "Emporio",
+     "postalCode": "500054",
+     "localidad": "Norte",
+     "lat": 4.136,
+     "lng": -73.6266
+    },
+    {
+     "name": "La Rochela",
+     "postalCode": "500055",
+     "localidad": "Sur",
+     "lat": 4.142,
+     "lng": -73.6266
+    },
+    {
+     "name": "Cataluña",
+     "postalCode": "500056",
+     "localidad": "Oriente",
+     "lat": 4.148,
+     "lng": -73.6266
+    },
+    {
+     "name": "Palmar",
+     "postalCode": "500057",
+     "localidad": "Occidente",
+     "lat": 4.154,
+     "lng": -73.6266
+    },
+    {
+     "name": "La Coralina",
+     "postalCode": "500058",
+     "localidad": "Centro",
+     "lat": 4.16,
+     "lng": -73.6266
+    },
+    {
+     "name": "Buque",
+     "postalCode": "500059",
+     "localidad": "Norte",
+     "lat": 4.124,
+     "lng": -73.6196
+    },
+    {
+     "name": "Doña Luz",
+     "postalCode": "500060",
+     "localidad": "Sur",
+     "lat": 4.13,
+     "lng": -73.6196
+    },
+    {
+     "name": "Nueva Andalucía",
+     "postalCode": "500061",
+     "localidad": "Oriente",
+     "lat": 4.136,
+     "lng": -73.6196
+    },
+    {
+     "name": "Villacentro",
+     "postalCode": "500062",
+     "localidad": "Occidente",
+     "lat": 4.142,
+     "lng": -73.6196
+    }
+   ]
+  }
+ ]
+}
