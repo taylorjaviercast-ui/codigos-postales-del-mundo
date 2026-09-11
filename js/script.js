@@ -43,7 +43,7 @@
   /* ================================================================
      2. DATA LOADING
      ================================================================ */
-  const DATA_VERSION = '25';
+  const DATA_VERSION = '26';
 
   async function loadData() {
     if (DATA) return DATA;
@@ -805,7 +805,10 @@
     }
 
     // Page title & meta – optimized for viral keywords
-    document.title = `Códigos Postales de ${country.name} – Lista por Ciudad y Mapa ${new Date().getFullYear()}`;
+    const _yrc = new Date().getFullYear();
+    document.title = country.id === 'usa'
+      ? `ZIP Codes de Estados Unidos – Lista por Ciudad y Estado | Mapa ${_yrc}`
+      : `Códigos Postales de ${country.name} – Lista por Ciudad y Mapa ${_yrc}`;
     setMeta('description', `Busca el código postal de cualquier ciudad de ${country.name} gratis. ${country.totalCodes} organizados por ciudad, barrio y colonia, con mapa interactivo. Formato: ${country.format || 'oficial'}. Actualizado ${new Date().getFullYear()}.`);
 
     // Breadcrumbs
@@ -911,8 +914,14 @@
       document.title = `Código Postal de ${urlBarrioName}, ${city.name} – CP ${city.postalCode} | ${country.name}`;
       setMeta('description', `¿Cuál es el código postal de ${urlBarrioName}, ${city.name}? Es ${city.postalCode}. Consulta la ubicación exacta en el mapa y los barrios cercanos de ${city.state}, ${country.name}. Actualizado ${new Date().getFullYear()}.`);
     } else {
-      document.title = `Código Postal de ${city.name}, ${country.name} – CP ${city.postalCode} | Mapa ${new Date().getFullYear()}`;
-      setMeta('description', `¿Cuál es el código postal de ${city.name}? Es ${city.postalCode} (rango ${city.postalRange}). Consulta todos los barrios y zonas postales de ${city.name}, ${country.name}, con mapa interactivo. Actualizado ${new Date().getFullYear()}.`);
+      const _yr = new Date().getFullYear();
+      if (countryId === 'usa') {
+        document.title = `ZIP Code de ${city.name}, ${city.state} – ${city.postalCode} | Código Postal y Mapa ${_yr}`;
+        setMeta('description', `¿Cuál es el ZIP code de ${city.name}? Es ${city.postalCode} (rango ${city.postalRange}). Consulta todos los ZIP codes y barrios de ${city.name}, ${city.state}, con mapa interactivo. ZIP code lookup ${_yr}.`);
+      } else {
+        document.title = `Código Postal de ${city.name}, ${country.name} – CP ${city.postalCode} | Mapa ${_yr}`;
+        setMeta('description', `¿Cuál es el código postal de ${city.name}? Es ${city.postalCode} (rango ${city.postalRange}). Consulta todos los barrios y zonas postales de ${city.name}, ${country.name}, con mapa interactivo. Actualizado ${_yr}.`);
+      }
     }
 
     // Breadcrumbs
