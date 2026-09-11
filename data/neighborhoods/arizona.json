@@ -1,0 +1,140 @@
+{
+ "state": "Arizona",
+ "stateKey": "arizona",
+ "cities": [
+  {
+   "cityId": "phoenix",
+   "cityName": "Phoenix",
+   "state": "Arizona",
+   "totalBarrios": 18,
+   "zones": [
+    {
+     "name": "Downtown Phoenix",
+     "postalCode": "85004",
+     "localidad": "Phoenix",
+     "lat": 33.4184,
+     "lng": -112.095
+    },
+    {
+     "name": "Midtown",
+     "postalCode": "85012",
+     "localidad": "Phoenix",
+     "lat": 33.4304,
+     "lng": -112.095
+    },
+    {
+     "name": "Arcadia",
+     "postalCode": "85018",
+     "localidad": "Phoenix",
+     "lat": 33.4424,
+     "lng": -112.095
+    },
+    {
+     "name": "Biltmore",
+     "postalCode": "85016",
+     "localidad": "Phoenix",
+     "lat": 33.4544,
+     "lng": -112.095
+    },
+    {
+     "name": "Camelback East",
+     "postalCode": "85018",
+     "localidad": "Phoenix",
+     "lat": 33.4664,
+     "lng": -112.095
+    },
+    {
+     "name": "Ahwatukee",
+     "postalCode": "85044",
+     "localidad": "Phoenix",
+     "lat": 33.4784,
+     "lng": -112.095
+    },
+    {
+     "name": "Desert Ridge",
+     "postalCode": "85050",
+     "localidad": "Phoenix",
+     "lat": 33.4184,
+     "lng": -112.081
+    },
+    {
+     "name": "Maryvale",
+     "postalCode": "85031",
+     "localidad": "Phoenix",
+     "lat": 33.4304,
+     "lng": -112.081
+    },
+    {
+     "name": "South Mountain",
+     "postalCode": "85040",
+     "localidad": "Phoenix",
+     "lat": 33.4424,
+     "lng": -112.081
+    },
+    {
+     "name": "Deer Valley",
+     "postalCode": "85027",
+     "localidad": "Phoenix",
+     "lat": 33.4544,
+     "lng": -112.081
+    },
+    {
+     "name": "Paradise Valley Village",
+     "postalCode": "85032",
+     "localidad": "Phoenix",
+     "lat": 33.4664,
+     "lng": -112.081
+    },
+    {
+     "name": "Encanto",
+     "postalCode": "85007",
+     "localidad": "Phoenix",
+     "lat": 33.4784,
+     "lng": -112.081
+    },
+    {
+     "name": "Laveen",
+     "postalCode": "85339",
+     "localidad": "Phoenix",
+     "lat": 33.4184,
+     "lng": -112.067
+    },
+    {
+     "name": "North Mountain",
+     "postalCode": "85021",
+     "localidad": "Phoenix",
+     "lat": 33.4304,
+     "lng": -112.067
+    },
+    {
+     "name": "Estrella",
+     "postalCode": "85339",
+     "localidad": "Phoenix",
+     "lat": 33.4424,
+     "lng": -112.067
+    },
+    {
+     "name": "Roosevelt Row",
+     "postalCode": "85004",
+     "localidad": "Phoenix",
+     "lat": 33.4544,
+     "lng": -112.067
+    },
+    {
+     "name": "Sunnyslope",
+     "postalCode": "85020",
+     "localidad": "Phoenix",
+     "lat": 33.4664,
+     "lng": -112.067
+    },
+    {
+     "name": "Garfield",
+     "postalCode": "85006",
+     "localidad": "Phoenix",
+     "lat": 33.4784,
+     "lng": -112.067
+    }
+   ]
+  }
+ ]
+}

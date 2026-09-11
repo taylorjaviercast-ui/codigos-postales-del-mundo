@@ -1,0 +1,168 @@
+{
+ "state": "Pennsylvania",
+ "stateKey": "pennsylvania",
+ "cities": [
+  {
+   "cityId": "philadelphia",
+   "cityName": "Philadelphia",
+   "state": "Pennsylvania",
+   "totalBarrios": 22,
+   "zones": [
+    {
+     "name": "Center City",
+     "postalCode": "19102",
+     "localidad": "Philadelphia",
+     "lat": 39.9226,
+     "lng": -75.1862
+    },
+    {
+     "name": "Old City",
+     "postalCode": "19106",
+     "localidad": "Philadelphia",
+     "lat": 39.9346,
+     "lng": -75.1862
+    },
+    {
+     "name": "Rittenhouse Square",
+     "postalCode": "19103",
+     "localidad": "Philadelphia",
+     "lat": 39.9466,
+     "lng": -75.1862
+    },
+    {
+     "name": "Society Hill",
+     "postalCode": "19106",
+     "localidad": "Philadelphia",
+     "lat": 39.9586,
+     "lng": -75.1862
+    },
+    {
+     "name": "Fishtown",
+     "postalCode": "19125",
+     "localidad": "Philadelphia",
+     "lat": 39.9706,
+     "lng": -75.1862
+    },
+    {
+     "name": "Northern Liberties",
+     "postalCode": "19123",
+     "localidad": "Philadelphia",
+     "lat": 39.9826,
+     "lng": -75.1862
+    },
+    {
+     "name": "Kensington",
+     "postalCode": "19134",
+     "localidad": "Philadelphia",
+     "lat": 39.9226,
+     "lng": -75.1722
+    },
+    {
+     "name": "Fairmount",
+     "postalCode": "19130",
+     "localidad": "Philadelphia",
+     "lat": 39.9346,
+     "lng": -75.1722
+    },
+    {
+     "name": "University City",
+     "postalCode": "19104",
+     "localidad": "Philadelphia",
+     "lat": 39.9466,
+     "lng": -75.1722
+    },
+    {
+     "name": "West Philadelphia",
+     "postalCode": "19139",
+     "localidad": "Philadelphia",
+     "lat": 39.9586,
+     "lng": -75.1722
+    },
+    {
+     "name": "Germantown",
+     "postalCode": "19144",
+     "localidad": "Philadelphia",
+     "lat": 39.9706,
+     "lng": -75.1722
+    },
+    {
+     "name": "Manayunk",
+     "postalCode": "19127",
+     "localidad": "Philadelphia",
+     "lat": 39.9826,
+     "lng": -75.1722
+    },
+    {
+     "name": "Chestnut Hill",
+     "postalCode": "19118",
+     "localidad": "Philadelphia",
+     "lat": 39.9226,
+     "lng": -75.1582
+    },
+    {
+     "name": "Roxborough",
+     "postalCode": "19128",
+     "localidad": "Philadelphia",
+     "lat": 39.9346,
+     "lng": -75.1582
+    },
+    {
+     "name": "South Philadelphia",
+     "postalCode": "19148",
+     "localidad": "Philadelphia",
+     "lat": 39.9466,
+     "lng": -75.1582
+    },
+    {
+     "name": "Point Breeze",
+     "postalCode": "19146",
+     "localidad": "Philadelphia",
+     "lat": 39.9586,
+     "lng": -75.1582
+    },
+    {
+     "name": "Passyunk Square",
+     "postalCode": "19147",
+     "localidad": "Philadelphia",
+     "lat": 39.9706,
+     "lng": -75.1582
+    },
+    {
+     "name": "Port Richmond",
+     "postalCode": "19134",
+     "localidad": "Philadelphia",
+     "lat": 39.9826,
+     "lng": -75.1582
+    },
+    {
+     "name": "Frankford",
+     "postalCode": "19124",
+     "localidad": "Philadelphia",
+     "lat": 39.9226,
+     "lng": -75.1442
+    },
+    {
+     "name": "Mount Airy",
+     "postalCode": "19119",
+     "localidad": "Philadelphia",
+     "lat": 39.9346,
+     "lng": -75.1442
+    },
+    {
+     "name": "Brewerytown",
+     "postalCode": "19121",
+     "localidad": "Philadelphia",
+     "lat": 39.9466,
+     "lng": -75.1442
+    },
+    {
+     "name": "Graduate Hospital",
+     "postalCode": "19146",
+     "localidad": "Philadelphia",
+     "lat": 39.9586,
+     "lng": -75.1442
+    }
+   ]
+  }
+ ]
+}

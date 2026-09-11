@@ -1,0 +1,140 @@
+{
+ "state": "Texas",
+ "stateKey": "texas-sa",
+ "cities": [
+  {
+   "cityId": "san-antonio",
+   "cityName": "San Antonio",
+   "state": "Texas",
+   "totalBarrios": 18,
+   "zones": [
+    {
+     "name": "Downtown",
+     "postalCode": "78205",
+     "localidad": "San Antonio",
+     "lat": 29.3941,
+     "lng": -98.5146
+    },
+    {
+     "name": "King William",
+     "postalCode": "78204",
+     "localidad": "San Antonio",
+     "lat": 29.4061,
+     "lng": -98.5146
+    },
+    {
+     "name": "Southtown",
+     "postalCode": "78210",
+     "localidad": "San Antonio",
+     "lat": 29.4181,
+     "lng": -98.5146
+    },
+    {
+     "name": "Alamo Heights",
+     "postalCode": "78209",
+     "localidad": "San Antonio",
+     "lat": 29.4301,
+     "lng": -98.5146
+    },
+    {
+     "name": "Stone Oak",
+     "postalCode": "78258",
+     "localidad": "San Antonio",
+     "lat": 29.4421,
+     "lng": -98.5146
+    },
+    {
+     "name": "Medical Center",
+     "postalCode": "78229",
+     "localidad": "San Antonio",
+     "lat": 29.4541,
+     "lng": -98.5146
+    },
+    {
+     "name": "Monte Vista",
+     "postalCode": "78212",
+     "localidad": "San Antonio",
+     "lat": 29.3941,
+     "lng": -98.5006
+    },
+    {
+     "name": "Olmos Park",
+     "postalCode": "78212",
+     "localidad": "San Antonio",
+     "lat": 29.4061,
+     "lng": -98.5006
+    },
+    {
+     "name": "Terrell Hills",
+     "postalCode": "78209",
+     "localidad": "San Antonio",
+     "lat": 29.4181,
+     "lng": -98.5006
+    },
+    {
+     "name": "Westover Hills",
+     "postalCode": "78251",
+     "localidad": "San Antonio",
+     "lat": 29.4301,
+     "lng": -98.5006
+    },
+    {
+     "name": "Northwest Side",
+     "postalCode": "78238",
+     "localidad": "San Antonio",
+     "lat": 29.4421,
+     "lng": -98.5006
+    },
+    {
+     "name": "Brooks City Base",
+     "postalCode": "78235",
+     "localidad": "San Antonio",
+     "lat": 29.4541,
+     "lng": -98.5006
+    },
+    {
+     "name": "Government Hill",
+     "postalCode": "78208",
+     "localidad": "San Antonio",
+     "lat": 29.3941,
+     "lng": -98.4866
+    },
+    {
+     "name": "Tobin Hill",
+     "postalCode": "78212",
+     "localidad": "San Antonio",
+     "lat": 29.4061,
+     "lng": -98.4866
+    },
+    {
+     "name": "Lavaca",
+     "postalCode": "78210",
+     "localidad": "San Antonio",
+     "lat": 29.4181,
+     "lng": -98.4866
+    },
+    {
+     "name": "Dellview",
+     "postalCode": "78213",
+     "localidad": "San Antonio",
+     "lat": 29.4301,
+     "lng": -98.4866
+    },
+    {
+     "name": "Helotes",
+     "postalCode": "78023",
+     "localidad": "San Antonio",
+     "lat": 29.4421,
+     "lng": -98.4866
+    },
+    {
+     "name": "Shavano Park",
+     "postalCode": "78231",
+     "localidad": "San Antonio",
+     "lat": 29.4541,
+     "lng": -98.4866
+    }
+   ]
+  }
+ ]
+}

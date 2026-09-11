@@ -1,0 +1,154 @@
+{
+ "state": "Massachusetts",
+ "stateKey": "massachusetts",
+ "cities": [
+  {
+   "cityId": "boston",
+   "cityName": "Boston",
+   "state": "Massachusetts",
+   "totalBarrios": 20,
+   "zones": [
+    {
+     "name": "Back Bay",
+     "postalCode": "02116",
+     "localidad": "Boston",
+     "lat": 42.3301,
+     "lng": -71.0799
+    },
+    {
+     "name": "Beacon Hill",
+     "postalCode": "02108",
+     "localidad": "Boston",
+     "lat": 42.3421,
+     "lng": -71.0799
+    },
+    {
+     "name": "North End",
+     "postalCode": "02113",
+     "localidad": "Boston",
+     "lat": 42.3541,
+     "lng": -71.0799
+    },
+    {
+     "name": "South End",
+     "postalCode": "02118",
+     "localidad": "Boston",
+     "lat": 42.3661,
+     "lng": -71.0799
+    },
+    {
+     "name": "Charlestown",
+     "postalCode": "02129",
+     "localidad": "Boston",
+     "lat": 42.3781,
+     "lng": -71.0799
+    },
+    {
+     "name": "Dorchester",
+     "postalCode": "02122",
+     "localidad": "Boston",
+     "lat": 42.3901,
+     "lng": -71.0799
+    },
+    {
+     "name": "Roxbury",
+     "postalCode": "02119",
+     "localidad": "Boston",
+     "lat": 42.3301,
+     "lng": -71.0659
+    },
+    {
+     "name": "Jamaica Plain",
+     "postalCode": "02130",
+     "localidad": "Boston",
+     "lat": 42.3421,
+     "lng": -71.0659
+    },
+    {
+     "name": "South Boston",
+     "postalCode": "02127",
+     "localidad": "Boston",
+     "lat": 42.3541,
+     "lng": -71.0659
+    },
+    {
+     "name": "East Boston",
+     "postalCode": "02128",
+     "localidad": "Boston",
+     "lat": 42.3661,
+     "lng": -71.0659
+    },
+    {
+     "name": "Allston",
+     "postalCode": "02134",
+     "localidad": "Boston",
+     "lat": 42.3781,
+     "lng": -71.0659
+    },
+    {
+     "name": "Brighton",
+     "postalCode": "02135",
+     "localidad": "Boston",
+     "lat": 42.3901,
+     "lng": -71.0659
+    },
+    {
+     "name": "Fenway",
+     "postalCode": "02215",
+     "localidad": "Boston",
+     "lat": 42.3301,
+     "lng": -71.0519
+    },
+    {
+     "name": "Mattapan",
+     "postalCode": "02126",
+     "localidad": "Boston",
+     "lat": 42.3421,
+     "lng": -71.0519
+    },
+    {
+     "name": "Roslindale",
+     "postalCode": "02131",
+     "localidad": "Boston",
+     "lat": 42.3541,
+     "lng": -71.0519
+    },
+    {
+     "name": "West Roxbury",
+     "postalCode": "02132",
+     "localidad": "Boston",
+     "lat": 42.3661,
+     "lng": -71.0519
+    },
+    {
+     "name": "Hyde Park",
+     "postalCode": "02136",
+     "localidad": "Boston",
+     "lat": 42.3781,
+     "lng": -71.0519
+    },
+    {
+     "name": "Seaport District",
+     "postalCode": "02210",
+     "localidad": "Boston",
+     "lat": 42.3901,
+     "lng": -71.0519
+    },
+    {
+     "name": "Downtown Crossing",
+     "postalCode": "02111",
+     "localidad": "Boston",
+     "lat": 42.3301,
+     "lng": -71.0379
+    },
+    {
+     "name": "Chinatown",
+     "postalCode": "02111",
+     "localidad": "Boston",
+     "lat": 42.3421,
+     "lng": -71.0379
+    }
+   ]
+  }
+ ]
+}
